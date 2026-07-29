@@ -4,7 +4,6 @@ services:
     runtime: docker
     region: frankfurt
     plan: free
-    startCommand: bash start.sh
     envVars:
       - key: APP_ENV
         value: production
