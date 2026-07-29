@@ -12,6 +12,9 @@ php artisan storage:link --force 2>/dev/null || true
 touch database/database.sqlite
 php artisan migrate --force 2>/dev/null || true
 
+# Regenerate sitemap with production URL
+php artisan sitemap:generate 2>/dev/null || true
+
 # Warmup cache
 php artisan config:cache
 php artisan route:cache
