@@ -29,6 +29,7 @@
     {{-- @inertiaHead : endroit où Inertia injecte les balises <meta>/<title> dynamiques définies dans chaque page Vue --}}
     @inertiaHead
 
+    <meta name="google-site-verification" content="Rr_em-oySkUVt9Gwjog5HSfgdtecvQ1nNLxjUmU8PX0" />
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#c97a2b">
     <link rel="alternate" type="application/rss+xml" title="Flux RSS" href="/feed.xml" />
