@@ -8,6 +8,10 @@ chmod -R 775 storage bootstrap/cache
 # Create symlink for public storage (if not exists)
 php artisan storage:link --force 2>/dev/null || true
 
+# Ensure SQLite database exists and run migrations
+touch database/database.sqlite
+php artisan migrate --force 2>/dev/null || true
+
 # Warmup cache
 php artisan config:cache
 php artisan route:cache
