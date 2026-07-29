@@ -21,8 +21,7 @@ COPY --from=frontend /app/public/build /app/public/build
 COPY . .
 
 RUN composer install --no-dev --optimize-autoloader \
-    && chmod -R 775 storage bootstrap/cache \
-    && chown -R www-data:www-data storage bootstrap/cache 2>/dev/null || true
+    && chmod -R 775 storage bootstrap/cache
 
 EXPOSE 8000
 CMD ["bash", "start.sh"]
