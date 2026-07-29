@@ -5,7 +5,7 @@ RUN npm ci
 COPY . .
 RUN npm run build
 
-FROM php:8.3-cli-alpine
+FROM php:8.4-cli-alpine
 RUN apk add --no-cache \
     postgresql-dev \
     sqlite-dev \
