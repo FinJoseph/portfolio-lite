@@ -18,19 +18,17 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->encryptCookies(except: ['locale']);
+        $middleware->trustProxies(at: '*');
 
         $middleware->web(append: [
             SetLocale::class,
             HandleInertiaRequests::class,
             ContentSecurityPolicy::class,
+            ForceHttps::class,
         ]);
 
         $middleware->api(prepend: [
             SetLocale::class,
-        ]);
-
-        $middleware->alias([
-            'force.https' => ForceHttps::class,
         ]);
     })
     ->withEvents(discover: true)
