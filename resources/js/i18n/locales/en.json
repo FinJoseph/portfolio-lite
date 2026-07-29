@@ -1,0 +1,244 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "work": "Work",
+        "skills": "Skills",
+        "projects": "Projects",
+        "blog": "Blog",
+        "testimonials": "Testimonials",
+        "contact": "Contact"
+    },
+    "home": {
+        "hero": {
+            "eyebrow": "// Full-Stack Developer based in Madagascar",
+            "title": "I build solid web applications, from scratch.",
+            "title_prefix": "I build ",
+            "title_highlight": "solid web applications",
+            "title_suffix": ", from scratch.",
+            "subtitle": "Laravel, Vue.js and Tailwind — from the back-end to the interface, no compromise on quality.",
+            "cta_primary": "View my projects",
+            "cta_secondary": "Get in touch",
+            "status": "Available for new projects",
+            "scroll": "Scroll",
+            "find_me": "Find me on →",
+            "follow_me": "Follow me"
+        },
+        "about_preview": {
+            "eyebrow": "About",
+            "title": "One developer, a complete approach",
+            "cta": "Learn more"
+        },
+        "skills_preview": {
+            "eyebrow": "Skills",
+            "title": "Tools I work with",
+            "cta": "View all skills",
+            "level": "Proficiency"
+        },
+        "projects_preview": {
+            "eyebrow": "Projects",
+            "title": "Recent work",
+            "cta": "View all projects"
+        },
+        "testimonials_preview": {
+            "eyebrow": "Testimonials",
+            "title": "What clients say",
+            "cta": "View all testimonials"
+        },
+        "contact_cta": {
+            "title": "Have a project in mind?",
+            "subtitle": "Let's talk, no strings attached.",
+            "cta": "Send a message"
+        }
+    },
+    "footer": {
+        "rights": "All rights reserved.",
+        "tagline": "Full-stack web developer based in Madagascar.",
+        "navigation": "Navigation",
+        "contact": "Contact",
+        "location": "Madagascar",
+        "crafted_with": "Crafted with Laravel, Vue.js & Tailwind CSS",
+        "tech_stack": "Tech stack",
+        "copy_email": "Copy email",
+        "copy_hint": "Click to copy",
+        "copied": "Copied!",
+        "back_to_top": "Back to top",
+        "connect_cta": "Start a conversation"
+    },
+    "meta": {
+        "about": {
+            "title": "About — Portfolio"
+        },
+        "contact": {
+            "title": "Contact — Let's discuss your project",
+            "description": "Have a project, a question, or an opportunity? Reach out by email, WhatsApp, or through the contact form.",
+            "og_title": "Contact — Let's discuss your project",
+            "og_description": "Email, WhatsApp, or form: pick the channel that suits you best to talk about your project."
+        }
+    },
+    "contact": {
+        "page_title": "Contact",
+        "eyebrow": "// Let's discuss your project",
+        "heading": "Get in touch",
+        "subtitle": "Have a project, a question, or an opportunity? Send me a message.",
+        "required_hint": "Required fields",
+        "form": {
+            "title": "Send a message",
+            "subtitle": "Fill in the form below and I'll get back to you shortly.",
+            "description": "Fill in the form below and I'll get back to you shortly."
+        },
+        "meta": {
+            "title": "Contact — Let's discuss your project",
+            "description": "Have a project, a question, or an opportunity? Reach out by email, WhatsApp, or through the contact form.",
+            "og_title": "Contact — Let's discuss your project",
+            "og_description": "Email, WhatsApp, or form: pick the channel that suits you best to talk about your project.",
+            "twitter_title": "Contact — Let's discuss your project",
+            "twitter_description": "Email, WhatsApp, or form: pick the channel that suits you best to talk about your project."
+        },
+        "errors": {
+            "name_required": "Please enter your name.",
+            "name_max": "Name cannot exceed 100 characters.",
+            "email_required": "Please enter your email.",
+            "email_invalid": "This email address does not look valid.",
+            "subject_required": "Please enter a subject.",
+            "subject_max": "Subject cannot exceed 150 characters.",
+            "message_required": "Please write a message.",
+            "message_min": "Your message must be at least 10 characters long.",
+            "message_max": "Your message cannot exceed 5000 characters.",
+            "honeypot": "Spam detected."
+        },
+        "status": {
+            "send": "Send message",
+            "sending": "Sending..."
+        },
+        "alerts": {
+            "success": {
+                "title": "Message sent!",
+                "message": "Thanks, I'll get back to you as soon as possible."
+            }
+        },
+        "fields": {
+            "name": "Name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message"
+        },
+        "placeholders": {
+            "name": "Your name",
+            "email": "your{'@'}email.com",
+            "subject": "Subject of your message",
+            "message": "Describe your project in a few lines..."
+        },
+        "buttons": {
+            "send": "Send message",
+            "sending": "Sending..."
+        },
+        "success": {
+            "title": "Message sent!",
+            "message": "Thanks, I'll get back to you as soon as possible."
+        },
+        "validation": {
+            "name_required": "Please enter your name.",
+            "name_max": "Name cannot exceed 100 characters.",
+            "email_required": "Please enter your email.",
+            "email_invalid": "This email address does not look valid.",
+            "subject_required": "Please enter a subject.",
+            "subject_max": "Subject cannot exceed 150 characters.",
+            "message_required": "Please write a message.",
+            "message_min": "Your message must be at least 10 characters long.",
+            "message_max": "Your message cannot exceed 5000 characters."
+        },
+        "direct": {
+            "title": "Direct contact",
+            "subtitle": "Prefer a quick chat? Pick the channel that suits you best.",
+            "email": "Email",
+            "copy_email": "Copy email",
+            "copied": "Copied!",
+            "whatsapp": "WhatsApp",
+            "phone": "Call",
+            "socials": "Find me also on",
+            "availability": "Replies within 24 to 48 business hours",
+            "location_label": "Based in"
+        }
+    },
+    "blog": {
+        "eyebrow": "// Blog",
+        "title": "Blog",
+        "subtitle": "Thoughts on web development, Laravel, Vue.js and more.",
+        "meta": {
+            "title": "Blog",
+            "description": "Articles about web development, Laravel, Vue.js and more."
+        },
+        "feed": {
+            "title": "Blog RSS feed"
+        },
+        "search": {
+            "label": "Search",
+            "placeholder": "Search an article…"
+        },
+        "filters": {
+            "categories": "Categories",
+            "tags": "Tags",
+            "all": "All",
+            "reset": "Reset filters"
+        },
+        "reading_time": "min read",
+        "empty": {
+            "title": "No article found",
+            "message": "No article matches your search or selected filters."
+        },
+        "pagination": {
+            "previous": "Previous",
+            "next": "Next",
+            "page": "Page {current} of {total}"
+        },
+        "show": {
+            "back": "Back to blog",
+            "related": "Related articles",
+            "published_on": "Published on {date}",
+            "category_label": "Category",
+            "tags_label": "Tags"
+        },
+        "breadcrumb": {
+            "home": "Home",
+            "blog": "Blog"
+        }
+    },
+    "about": {
+        "experience_title": "Experiences",
+        "education_title": "Education",
+        "download_cv": "Download CV",
+        "contact_me": "Contact me",
+        "stat_years": "Years",
+        "stat_experiences": "Experiences",
+        "stat_education": "Diplomas"
+    },
+    "skills": {
+        "eyebrow": "// My skills",
+        "title": "Technical Skills",
+        "subtitle": "The technologies and tools I use daily to build robust web applications.",
+        "categories": {
+            "all": "All",
+            "backend": "Back-end",
+            "frontend": "Front-end",
+            "devops": "DevOps & Tools",
+            "design": "Design & UI",
+            "database": "Database",
+            "other": "Other"
+        },
+        "level": {
+            "label": "Level",
+            "beginner": "Beginner",
+            "intermediate": "Intermediate",
+            "advanced": "Advanced",
+            "expert": "Expert"
+        },
+        "related_skills": "Related skills",
+        "no_skills": "No skills found for this category.",
+        "coming_soon": "This page is under construction.",
+        "meta": {
+            "title": "Skills — Portfolio",
+            "description": "Discover my technical skills: Laravel, Vue.js, Tailwind CSS, PHP, MySQL and more."
+        }
+    }
+}

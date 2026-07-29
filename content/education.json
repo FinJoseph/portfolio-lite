@@ -1,0 +1,77 @@
+[
+    {
+        "degree": {
+            "fr": "Master 2 en Communication et Management de Projet (CNMP)",
+            "en": "Master 2 in Communication and Project Management (CNMP)",
+            "mg": "Master 2 amin'ny Communication sy Fitantanana Tetikasa (CNMP)"
+        },
+        "institution": {
+            "fr": "EMIT Fianarantsoa",
+            "en": "EMIT Fianarantsoa",
+            "mg": "EMIT Fianarantsoa"
+        },
+        "description": {
+            "fr": "Formation avancée en management de projet, communication stratégique et gestion d'équipe.",
+            "en": "Advanced training in project management, strategic communication and team management.",
+            "mg": "Fiofanana mandroso amin'ny fitantanana tetikasa, communication stratégique sy fitantanana ekipa."
+        },
+        "duration": "2024 - 2025",
+        "start_date": "2024-09",
+        "end_date": "2025-06",
+        "location": "Fianarantsoa, Madagascar",
+        "institution_url": null,
+        "institution_logo": null,
+        "order": 1,
+        "is_active": true
+    },
+    {
+        "degree": {
+            "fr": "Licence en Communication et Multimédia (CM)",
+            "en": "Bachelor's in Communication and Multimedia (CM)",
+            "mg": "Licence amin'ny Communication sy Multimedia (CM)"
+        },
+        "institution": {
+            "fr": "EMIT Fianarantsoa",
+            "en": "EMIT Fianarantsoa",
+            "mg": "EMIT Fianarantsoa"
+        },
+        "description": {
+            "fr": "Formation en communication digitale, création multimédia et développement web.",
+            "en": "Training in digital communication, multimedia creation and web development.",
+            "mg": "Fiofanana amin'ny communication digitale, création multimédia sy fampandrosoana tranokala."
+        },
+        "duration": "2023",
+        "start_date": "2023-09",
+        "end_date": "2024-06",
+        "location": "Fianarantsoa, Madagascar",
+        "institution_url": null,
+        "institution_logo": null,
+        "order": 2,
+        "is_active": true
+    },
+    {
+        "degree": {
+            "fr": "Baccalauréat Série A2",
+            "en": "High School Diploma (A2 Series)",
+            "mg": "Baccalauréat Série A2"
+        },
+        "institution": {
+            "fr": "Lycée Présentation de Marie (LPM)",
+            "en": "Lycée Présentation de Marie (LPM)",
+            "mg": "Lycée Présentation de Marie (LPM)"
+        },
+        "description": {
+            "fr": "Baccalauréat série littéraire.",
+            "en": "High school diploma in literature.",
+            "mg": "Baccalauréat amin'ny literatiora."
+        },
+        "duration": "2019",
+        "start_date": "2014-09",
+        "end_date": "2019-06",
+        "location": "Fianarantsoa, Madagascar",
+        "institution_url": null,
+        "institution_logo": null,
+        "order": 3,
+        "is_active": true
+    }
+]

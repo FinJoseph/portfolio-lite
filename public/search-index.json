@@ -1,0 +1,578 @@
+[
+    {
+        "type": "project",
+        "title": "Antilin'i Madagasikara",
+        "slug": "antilin-i-madagasikara",
+        "excerpt": "Application de gestion des membres pour l'association scout Antilin'i Madagasikara (Scouts de Madagascar). Plateforme web et mobile responsive avec administration Filament et site public Vue.js.",
+        "url": "\/projects\/antilin-i-madagasikara",
+        "locale": "fr"
+    },
+    {
+        "type": "project",
+        "title": "Portfolio Professionnel",
+        "slug": "portfolio-professionnel",
+        "excerpt": "Portfolio interactif multilingue (FR\/EN\/MG) avec panneau d'administration Filament et interface SPA Inertia.js. Gestion complète des projets, articles, compétences et témoignages.",
+        "url": "\/projects\/portfolio-professionnel",
+        "locale": "fr"
+    },
+    {
+        "type": "project",
+        "title": "iKomandy B2B",
+        "slug": "ikomandy",
+        "excerpt": "Plateforme e-commerce B2B connectant grossistes et acheteurs. Administration Filament, frontend Vue.js, RBAC multi-rôles avec isolation des données par tenant.",
+        "url": "\/projects\/ikomandy",
+        "locale": "fr"
+    },
+    {
+        "type": "project",
+        "title": "ROI University of Management",
+        "slug": "roi-university",
+        "excerpt": "Site vitrine statique pour une université de management. 6 pages responsives en HTML\/CSS\/JS pur, sans framework, avec animations scroll et données centralisées.",
+        "url": "\/projects\/roi-university",
+        "locale": "fr"
+    },
+    {
+        "type": "project",
+        "title": "Art Malagasy",
+        "slug": "art-malagasy",
+        "excerpt": "Site vitrine e-commerce pour la vente d'artisanat malgache. Présentation de produits traditionnels (paniers, chapeaux, rafia, corne de zébu) avec catalogue et témoignages artisans.",
+        "url": "\/projects\/art-malagasy",
+        "locale": "fr"
+    },
+    {
+        "type": "article",
+        "title": "Déploiement d'une application Laravel",
+        "slug": "deploiement-laravel",
+        "excerpt": "Guide complet pour déployer votre application Laravel en production : préparation, hébergement et bonnes pratiques.",
+        "url": "\/blog\/deploiement-laravel",
+        "locale": "fr"
+    },
+    {
+        "type": "article",
+        "title": "Authentification avec Laravel Breeze",
+        "slug": "authentification-laravel-breeze",
+        "excerpt": "Ajoutez un système d'authentification complet à votre application Laravel avec Breeze.",
+        "url": "\/blog\/authentification-laravel-breeze",
+        "locale": "fr"
+    },
+    {
+        "type": "article",
+        "title": "CRUD Partie 2 : Modification et Suppression",
+        "slug": "crud-partie-2-laravel",
+        "excerpt": "Ajoutez les fonctionnalités de modification et suppression à votre application CRUD Laravel.",
+        "url": "\/blog\/crud-partie-2-laravel",
+        "locale": "fr"
+    },
+    {
+        "type": "article",
+        "title": "CRUD Partie 1 : Création et Lecture",
+        "slug": "crud-partie-1-laravel",
+        "excerpt": "Construisez une application CRUD complète avec Laravel : création et affichage des articles.",
+        "url": "\/blog\/crud-partie-1-laravel",
+        "locale": "fr"
+    },
+    {
+        "type": "article",
+        "title": "Migrations et Seeders",
+        "slug": "migrations-seeders-laravel",
+        "excerpt": "Gérez le schéma de votre base de données avec les migrations et peuplez-la avec les seeders.",
+        "url": "\/blog\/migrations-seeders-laravel",
+        "locale": "fr"
+    },
+    {
+        "type": "article",
+        "title": "Modèles et Eloquent ORM",
+        "slug": "modeles-eloquent-laravel",
+        "excerpt": "Découvrez Eloquent, l'ORM de Laravel, pour interagir avec votre base de données de façon élégante.",
+        "url": "\/blog\/modeles-eloquent-laravel",
+        "locale": "fr"
+    },
+    {
+        "type": "article",
+        "title": "Les Vues Blade dans Laravel",
+        "slug": "vues-blade-laravel",
+        "excerpt": "Maîtrisez le moteur de templates Blade de Laravel pour créer des vues dynamiques et réutilisables.",
+        "url": "\/blog\/vues-blade-laravel",
+        "locale": "fr"
+    },
+    {
+        "type": "article",
+        "title": "Routing et Controllers dans Laravel",
+        "slug": "routing-controllers-laravel",
+        "excerpt": "Apprenez à définir des routes et créer des contrôleurs dans Laravel pour gérer les requêtes HTTP.",
+        "url": "\/blog\/routing-controllers-laravel",
+        "locale": "fr"
+    },
+    {
+        "type": "article",
+        "title": "Structure d'un projet Laravel",
+        "slug": "structure-projet-laravel",
+        "excerpt": "Comprendre l'organisation des dossiers et fichiers d'un projet Laravel pour mieux s'y retrouver.",
+        "url": "\/blog\/structure-projet-laravel",
+        "locale": "fr"
+    },
+    {
+        "type": "article",
+        "title": "Installation de Laravel",
+        "slug": "installation-laravel",
+        "excerpt": "Guide pas à pas pour installer Laravel avec Composer, Laravel Installer et Laravel Sail.",
+        "url": "\/blog\/installation-laravel",
+        "locale": "fr"
+    },
+    {
+        "type": "article",
+        "title": "Prérequis et environnement de développement Laravel",
+        "slug": "prerequis-environnement-laravel",
+        "excerpt": "Tout ce qu'il faut savoir avant d'installer Laravel : PHP, Composer, serveur web et outils recommandés.",
+        "url": "\/blog\/prerequis-environnement-laravel",
+        "locale": "fr"
+    },
+    {
+        "type": "article",
+        "title": "Pourquoi choisir Laravel ?",
+        "slug": "pourquoi-choisir-laravel",
+        "excerpt": "Les 10 raisons qui font de Laravel le framework PHP préféré des développeurs en 2026.",
+        "url": "\/blog\/pourquoi-choisir-laravel",
+        "locale": "fr"
+    },
+    {
+        "type": "article",
+        "title": "Qu'est-ce que Laravel ?",
+        "slug": "qu-est-ce-que-laravel",
+        "excerpt": "Découvrez Laravel, le framework PHP le plus populaire pour construire des applications web modernes et élégantes.",
+        "url": "\/blog\/qu-est-ce-que-laravel",
+        "locale": "fr"
+    },
+    {
+        "type": "project",
+        "title": "Antilin'i Madagasikara",
+        "slug": "antilin-i-madagasikara",
+        "excerpt": "Member management application for the Antilin'i Madagasikara scout association (Scouts of Madagascar). Web and mobile responsive platform with Filament admin and Vue.js public site.",
+        "url": "\/projects\/antilin-i-madagasikara",
+        "locale": "en"
+    },
+    {
+        "type": "project",
+        "title": "Professional Portfolio",
+        "slug": "portfolio-professionnel",
+        "excerpt": "Multilingual interactive portfolio (FR\/EN\/MG) with Filament admin panel and Inertia.js SPA. Full management of projects, articles, skills and testimonials.",
+        "url": "\/projects\/portfolio-professionnel",
+        "locale": "en"
+    },
+    {
+        "type": "project",
+        "title": "iKomandy B2B",
+        "slug": "ikomandy",
+        "excerpt": "B2B e-commerce platform connecting wholesalers and buyers. Filament administration, Vue.js frontend, multi-role RBAC with per-tenant data isolation.",
+        "url": "\/projects\/ikomandy",
+        "locale": "en"
+    },
+    {
+        "type": "project",
+        "title": "ROI University of Management",
+        "slug": "roi-university",
+        "excerpt": "Static brochure website for a management university. 6 responsive pages in pure HTML\/CSS\/JS, no frameworks, with scroll animations and centralized data.",
+        "url": "\/projects\/roi-university",
+        "locale": "en"
+    },
+    {
+        "type": "project",
+        "title": "Art Malagasy",
+        "slug": "art-malagasy",
+        "excerpt": "E-commerce brochure website for Malagasy artisan crafts. Showcasing traditional products (baskets, hats, raffia, zebu horn) with product catalog and artisan testimonials.",
+        "url": "\/projects\/art-malagasy",
+        "locale": "en"
+    },
+    {
+        "type": "article",
+        "title": "Deploying a Laravel Application",
+        "slug": "deploiement-laravel",
+        "excerpt": "Complete guide to deploying your Laravel application to production: preparation, hosting and best practices.",
+        "url": "\/blog\/deploiement-laravel",
+        "locale": "en"
+    },
+    {
+        "type": "article",
+        "title": "Authentication with Laravel Breeze",
+        "slug": "authentification-laravel-breeze",
+        "excerpt": "Add a complete authentication system to your Laravel application with Breeze.",
+        "url": "\/blog\/authentification-laravel-breeze",
+        "locale": "en"
+    },
+    {
+        "type": "article",
+        "title": "CRUD Part 2: Update and Delete",
+        "slug": "crud-partie-2-laravel",
+        "excerpt": "Add update and delete functionality to your Laravel CRUD application.",
+        "url": "\/blog\/crud-partie-2-laravel",
+        "locale": "en"
+    },
+    {
+        "type": "article",
+        "title": "CRUD Part 1: Create and Read",
+        "slug": "crud-partie-1-laravel",
+        "excerpt": "Build a complete CRUD application with Laravel: creating and displaying articles.",
+        "url": "\/blog\/crud-partie-1-laravel",
+        "locale": "en"
+    },
+    {
+        "type": "article",
+        "title": "Migrations and Seeders",
+        "slug": "migrations-seeders-laravel",
+        "excerpt": "Manage your database schema with migrations and populate it with seeders.",
+        "url": "\/blog\/migrations-seeders-laravel",
+        "locale": "en"
+    },
+    {
+        "type": "article",
+        "title": "Models and Eloquent ORM",
+        "slug": "modeles-eloquent-laravel",
+        "excerpt": "Discover Eloquent, Laravel's ORM, to interact with your database in an elegant way.",
+        "url": "\/blog\/modeles-eloquent-laravel",
+        "locale": "en"
+    },
+    {
+        "type": "article",
+        "title": "Blade Views in Laravel",
+        "slug": "vues-blade-laravel",
+        "excerpt": "Master Laravel's Blade template engine to create dynamic and reusable views.",
+        "url": "\/blog\/vues-blade-laravel",
+        "locale": "en"
+    },
+    {
+        "type": "article",
+        "title": "Routing and Controllers in Laravel",
+        "slug": "routing-controllers-laravel",
+        "excerpt": "Learn how to define routes and create controllers in Laravel to handle HTTP requests.",
+        "url": "\/blog\/routing-controllers-laravel",
+        "locale": "en"
+    },
+    {
+        "type": "article",
+        "title": "Laravel Project Structure",
+        "slug": "structure-projet-laravel",
+        "excerpt": "Understand the organization of folders and files in a Laravel project to navigate with ease.",
+        "url": "\/blog\/structure-projet-laravel",
+        "locale": "en"
+    },
+    {
+        "type": "article",
+        "title": "Installing Laravel",
+        "slug": "installation-laravel",
+        "excerpt": "Step-by-step guide to installing Laravel with Composer, Laravel Installer and Laravel Sail.",
+        "url": "\/blog\/installation-laravel",
+        "locale": "en"
+    },
+    {
+        "type": "article",
+        "title": "Laravel Prerequisites and Development Environment",
+        "slug": "prerequis-environnement-laravel",
+        "excerpt": "Everything you need to know before installing Laravel: PHP, Composer, web server and recommended tools.",
+        "url": "\/blog\/prerequis-environnement-laravel",
+        "locale": "en"
+    },
+    {
+        "type": "article",
+        "title": "Why Choose Laravel?",
+        "slug": "pourquoi-choisir-laravel",
+        "excerpt": "10 reasons why Laravel is the favorite PHP framework for developers in 2026.",
+        "url": "\/blog\/pourquoi-choisir-laravel",
+        "locale": "en"
+    },
+    {
+        "type": "article",
+        "title": "What is Laravel?",
+        "slug": "qu-est-ce-que-laravel",
+        "excerpt": "Discover Laravel, the most popular PHP framework for building modern and elegant web applications.",
+        "url": "\/blog\/qu-est-ce-que-laravel",
+        "locale": "en"
+    },
+    {
+        "type": "project",
+        "title": "Antilin'i Madagasikara",
+        "slug": "antilin-i-madagasikara",
+        "excerpt": "Fampiharana fitantanana mpikambana ho an'ny fikambanana skoto Antilin'i Madagasikara. Tranokala web sy mobile responsive miaraka amin'ny administrasiona Filament sy tranokala publik Vue.js.",
+        "url": "\/projects\/antilin-i-madagasikara",
+        "locale": "mg"
+    },
+    {
+        "type": "project",
+        "title": "Portfolio Professionnel",
+        "slug": "portfolio-professionnel",
+        "excerpt": "Portfolio ifanakalozan-kevitra amin'ny fiteny maro (FR\/EN\/MG) miaraka amin'ny administrasiona Filament sy Inertia.js SPA. Fitantanana feno ny tetikasa, lahatsoratra, fahaiza-manao ary fijoroana vavolombelona.",
+        "url": "\/projects\/portfolio-professionnel",
+        "locale": "mg"
+    },
+    {
+        "type": "project",
+        "title": "iKomandy B2B",
+        "slug": "ikomandy",
+        "excerpt": "Tranokala e-commerce B2B mampifandray ny mpivarotra ambongadiny sy ny mpividy. Administrasiona Filament, frontend Vue.js, RBAC miaraka amin'ny fanavahana data isaky ny mpampiasa.",
+        "url": "\/projects\/ikomandy",
+        "locale": "mg"
+    },
+    {
+        "type": "project",
+        "title": "ROI University of Management",
+        "slug": "roi-university",
+        "excerpt": "Tranokala fampisehoana static ho an'ny oniversite fitantanana. Pejy 6 vita amin'ny HTML\/CSS\/JS madio, tsy mampiasa framework, miaraka amin'ny animation sy data voarafitra.",
+        "url": "\/projects\/roi-university",
+        "locale": "mg"
+    },
+    {
+        "type": "project",
+        "title": "Art Malagasy",
+        "slug": "art-malagasy",
+        "excerpt": "Tranokala fampisehoana e-commerce ho an'ny asa tanana malagasy. Mampiseho vokatra nentim-paharazana (harona, satroka, rafia, tandroky ny omby) miaraka amin'ny katalaogy sy fijoroana vavolombelona.",
+        "url": "\/projects\/art-malagasy",
+        "locale": "mg"
+    },
+    {
+        "type": "article",
+        "title": "Fampandehanana ny Laravel amin'ny production",
+        "slug": "deploiement-laravel",
+        "excerpt": "Tari-dalana feno hametrahana ny application Laravel amin'ny production: fiomanana, hosting ary fomba tsara.",
+        "url": "\/blog\/deploiement-laravel",
+        "locale": "mg"
+    },
+    {
+        "type": "article",
+        "title": "Fampidirana miaraka amin'ny Laravel Breeze",
+        "slug": "authentification-laravel-breeze",
+        "excerpt": "Ampio rafitra fampidirana feno amin'ny application Laravel miaraka amin'ny Breeze.",
+        "url": "\/blog\/authentification-laravel-breeze",
+        "locale": "mg"
+    },
+    {
+        "type": "article",
+        "title": "CRUD Ampahany 2: Fanavaozana sy Famafana",
+        "slug": "crud-partie-2-laravel",
+        "excerpt": "Ampio ny fanavaozana sy famafana amin'ny application CRUD Laravel.",
+        "url": "\/blog\/crud-partie-2-laravel",
+        "locale": "mg"
+    },
+    {
+        "type": "article",
+        "title": "CRUD Ampahany 1: Famoronana sy Famakiana",
+        "slug": "crud-partie-1-laravel",
+        "excerpt": "Manamboatra application CRUD feno miaraka amin'ny Laravel: famoronana sy fampisehoana lahatsoratra.",
+        "url": "\/blog\/crud-partie-1-laravel",
+        "locale": "mg"
+    },
+    {
+        "type": "article",
+        "title": "Migration sy Seeders",
+        "slug": "migrations-seeders-laravel",
+        "excerpt": "Tantano ny schema database miaraka amin'ny migration ary fenoy amin'ny seeders.",
+        "url": "\/blog\/migrations-seeders-laravel",
+        "locale": "mg"
+    },
+    {
+        "type": "article",
+        "title": "Modely sy Eloquent ORM",
+        "slug": "modeles-eloquent-laravel",
+        "excerpt": "Fantaro ny Eloquent, ORM Laravel, mba hifandraisana amin'ny database amin'ny fomba kanto.",
+        "url": "\/blog\/modeles-eloquent-laravel",
+        "locale": "mg"
+    },
+    {
+        "type": "article",
+        "title": "Vues Blade ao amin'ny Laravel",
+        "slug": "vues-blade-laravel",
+        "excerpt": "Fehezo ny moteur template Blade ao amin'ny Laravel mba hamoronana vues dynamique sy azo ampiasaina indray.",
+        "url": "\/blog\/vues-blade-laravel",
+        "locale": "mg"
+    },
+    {
+        "type": "article",
+        "title": "Routing sy Controllers ao amin'ny Laravel",
+        "slug": "routing-controllers-laravel",
+        "excerpt": "Ianaro ny famaritana routes sy ny famoronana controllers ao amin'ny Laravel hitantanana ny fangatahana HTTP.",
+        "url": "\/blog\/routing-controllers-laravel",
+        "locale": "mg"
+    },
+    {
+        "type": "article",
+        "title": "Rafitry ny tetikasa Laravel",
+        "slug": "structure-projet-laravel",
+        "excerpt": "Alaharo ny fandrindrana ny lahatahiry sy rakitra ao amin'ny tetikasa Laravel mba ho mora fitetezana.",
+        "url": "\/blog\/structure-projet-laravel",
+        "locale": "mg"
+    },
+    {
+        "type": "article",
+        "title": "Fametrahana Laravel",
+        "slug": "installation-laravel",
+        "excerpt": "Tari-dalana isaky ny dingana hametrahana Laravel miaraka amin'ny Composer, Laravel Installer ary Laravel Sail.",
+        "url": "\/blog\/installation-laravel",
+        "locale": "mg"
+    },
+    {
+        "type": "article",
+        "title": "Fepetra sy tontolo fampandrosoana Laravel",
+        "slug": "prerequis-environnement-laravel",
+        "excerpt": "Ny zavatra rehetra tokony ho fantatra alohan'ny fametrahana Laravel: PHP, Composer, mpizara web ary fitaovana ilaina.",
+        "url": "\/blog\/prerequis-environnement-laravel",
+        "locale": "mg"
+    },
+    {
+        "type": "article",
+        "title": "Nahoana no misafidy Laravel?",
+        "slug": "pourquoi-choisir-laravel",
+        "excerpt": "Antony 10 mahatonga ny Laravel ho framework PHP tian'ny mpamorona amin'ny 2026.",
+        "url": "\/blog\/pourquoi-choisir-laravel",
+        "locale": "mg"
+    },
+    {
+        "type": "article",
+        "title": "Inona ny Laravel?",
+        "slug": "qu-est-ce-que-laravel",
+        "excerpt": "Fantaro ny Laravel, framework PHP malaza indrindra amin'ny fanamboarana tranokala web maoderina sy mahafinaritra.",
+        "url": "\/blog\/qu-est-ce-que-laravel",
+        "locale": "mg"
+    },
+    {
+        "type": "skill",
+        "title": "Laravel",
+        "slug": "laravel",
+        "excerpt": "Framework PHP pour construire des applications web robustes, avec Eloquent, Artisan et un écosystème riche.",
+        "url": "\/skills\/laravel",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "PHP",
+        "slug": "php",
+        "excerpt": "Langage de script côté serveur, base de Laravel et de nombreux frameworks web.",
+        "url": "\/skills\/php",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "MySQL",
+        "slug": "mysql",
+        "excerpt": "Base de données relationnelle open-source, largement utilisée avec Laravel.",
+        "url": "\/skills\/mysql",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Vue.js",
+        "slug": "vuejs",
+        "excerpt": "Framework JavaScript progressif pour construire des interfaces réactives avec la Composition API.",
+        "url": "\/skills\/vuejs",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Tailwind CSS",
+        "slug": "tailwind-css",
+        "excerpt": "Framework CSS utility-first pour construire des interfaces sur mesure sans quitter le HTML.",
+        "url": "\/skills\/tailwind-css",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Inertia.js",
+        "slug": "inertiajs",
+        "excerpt": "Le pont entre Laravel et Vue.js, permettant de construire des SPA sans API.",
+        "url": "\/skills\/inertiajs",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "JavaScript",
+        "slug": "javascript",
+        "excerpt": "Langage de programmation du web, base de Vue.js et de l'écosystème frontend moderne.",
+        "url": "\/skills\/javascript",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "TypeScript",
+        "slug": "typescript",
+        "excerpt": "Superset typé de JavaScript pour des applications plus robustes et maintenables.",
+        "url": "\/skills\/typescript",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Git",
+        "slug": "git",
+        "excerpt": "Système de contrôle de version distribué, indispensable pour le travail collaboratif.",
+        "url": "\/skills\/git",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Docker",
+        "slug": "docker",
+        "excerpt": "Plateforme de conteneurisation pour des environnements de développement et déploiement cohérents.",
+        "url": "\/skills\/docker",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "GitHub Actions",
+        "slug": "github-actions",
+        "excerpt": "CI\/CD natif GitHub pour automatiser tests, builds et déploiements.",
+        "url": "\/skills\/github-actions",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Figma",
+        "slug": "figma",
+        "excerpt": "Outil de design collaboratif pour créer des interfaces et prototypes.",
+        "url": "\/skills\/figma",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Adobe Photoshop\/Illustrator",
+        "slug": "adobe-photoshopillustrator",
+        "excerpt": "Suite Adobe pour la création graphique, retouche photo et design d'interface.",
+        "url": "\/skills\/adobe-photoshopillustrator",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Bureautique",
+        "slug": "bureautique",
+        "excerpt": "Maîtrise avancée de Word, Excel, PowerPoint et LibreOffice pour la gestion documentaire.",
+        "url": "\/skills\/bureautique",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Communication",
+        "slug": "communication",
+        "excerpt": "Capacité à communiquer clairement, à l'écrit comme à l'oral, en français, anglais et malgache.",
+        "url": "\/skills\/communication",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Travail d'équipe",
+        "slug": "travail-dequipe",
+        "excerpt": "Collaboration efficace au sein d'une équipe, partage de connaissances et entraide.",
+        "url": "\/skills\/travail-dequipe",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Résolution de problèmes",
+        "slug": "resolution-de-problemes",
+        "excerpt": "Capacité à analyser, décomposer et résoudre des problèmes complexes de manière méthodique.",
+        "url": "\/skills\/resolution-de-problemes",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Adaptabilité",
+        "slug": "adaptabilite",
+        "excerpt": "Capacité à s'adapter rapidement aux nouvelles technologies, méthodes de travail et environnements.",
+        "url": "\/skills\/adaptabilite",
+        "locale": "all"
+    }
+]

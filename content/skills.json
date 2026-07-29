@@ -1,0 +1,182 @@
+[
+    {
+        "name": "Laravel",
+        "icon": "laravel",
+        "level": 85,
+        "category": "backend",
+        "description": "Framework PHP pour construire des applications web robustes, avec Eloquent, Artisan et un écosystème riche.",
+        "related_skills": ["PHP", "MySQL"],
+        "order": 1,
+        "is_active": true
+    },
+    {
+        "name": "PHP",
+        "icon": "php",
+        "level": 80,
+        "category": "backend",
+        "description": "Langage de script côté serveur, base de Laravel et de nombreux frameworks web.",
+        "related_skills": ["Laravel", "MySQL"],
+        "order": 2,
+        "is_active": true
+    },
+    {
+        "name": "MySQL",
+        "icon": "mysql",
+        "level": 75,
+        "category": "database",
+        "description": "Base de données relationnelle open-source, largement utilisée avec Laravel.",
+        "related_skills": ["Laravel", "PHP"],
+        "order": 3,
+        "is_active": true
+    },
+    {
+        "name": "Vue.js",
+        "icon": "vuejs",
+        "level": 75,
+        "category": "frontend",
+        "description": "Framework JavaScript progressif pour construire des interfaces réactives avec la Composition API.",
+        "related_skills": ["Tailwind CSS", "Inertia.js"],
+        "order": 4,
+        "is_active": true
+    },
+    {
+        "name": "Tailwind CSS",
+        "icon": "tailwindcss",
+        "level": 80,
+        "category": "frontend",
+        "description": "Framework CSS utility-first pour construire des interfaces sur mesure sans quitter le HTML.",
+        "related_skills": ["Vue.js", "Inertia.js"],
+        "order": 5,
+        "is_active": true
+    },
+    {
+        "name": "Inertia.js",
+        "icon": "inertia",
+        "level": 70,
+        "category": "frontend",
+        "description": "Le pont entre Laravel et Vue.js, permettant de construire des SPA sans API.",
+        "related_skills": ["Laravel", "Vue.js"],
+        "order": 6,
+        "is_active": true
+    },
+    {
+        "name": "JavaScript",
+        "icon": "javascript",
+        "level": 75,
+        "category": "frontend",
+        "description": "Langage de programmation du web, base de Vue.js et de l'écosystème frontend moderne.",
+        "related_skills": ["Vue.js", "TypeScript"],
+        "order": 7,
+        "is_active": true
+    },
+    {
+        "name": "TypeScript",
+        "icon": "typescript",
+        "level": 65,
+        "category": "frontend",
+        "description": "Superset typé de JavaScript pour des applications plus robustes et maintenables.",
+        "related_skills": ["JavaScript", "Vue.js"],
+        "order": 8,
+        "is_active": true
+    },
+    {
+        "name": "Git",
+        "icon": "git",
+        "level": 80,
+        "category": "devops",
+        "description": "Système de contrôle de version distribué, indispensable pour le travail collaboratif.",
+        "related_skills": ["Docker", "GitHub Actions"],
+        "order": 9,
+        "is_active": true
+    },
+    {
+        "name": "Docker",
+        "icon": "docker",
+        "level": 50,
+        "category": "devops",
+        "description": "Plateforme de conteneurisation pour des environnements de développement et déploiement cohérents.",
+        "related_skills": ["Git", "GitHub Actions"],
+        "order": 10,
+        "is_active": true
+    },
+    {
+        "name": "GitHub Actions",
+        "icon": "github",
+        "level": 65,
+        "category": "devops",
+        "description": "CI/CD natif GitHub pour automatiser tests, builds et déploiements.",
+        "related_skills": ["Git", "Docker"],
+        "order": 11,
+        "is_active": true
+    },
+    {
+        "name": "Figma",
+        "icon": "figma",
+        "level": 99,
+        "category": "design",
+        "description": "Outil de design collaboratif pour créer des interfaces et prototypes.",
+        "related_skills": ["Tailwind CSS"],
+        "order": 12,
+        "is_active": true
+    },
+    {
+        "name": "Adobe Photoshop/Illustrator",
+        "icon": "adobe",
+        "level": 99,
+        "category": "design",
+        "description": "Suite Adobe pour la création graphique, retouche photo et design d'interface.",
+        "related_skills": ["Figma", "Tailwind CSS"],
+        "order": 13,
+        "is_active": true
+    },
+    {
+        "name": "Bureautique",
+        "icon": "office",
+        "level": 99,
+        "category": "soft_skills",
+        "description": "Maîtrise avancée de Word, Excel, PowerPoint et LibreOffice pour la gestion documentaire.",
+        "related_skills": ["Communication"],
+        "order": 14,
+        "is_active": true
+    },
+    {
+        "name": "Communication",
+        "icon": "communication",
+        "level": 99,
+        "category": "soft_skills",
+        "description": "Capacité à communiquer clairement, à l'écrit comme à l'oral, en français, anglais et malgache.",
+        "related_skills": ["Travail d'équipe"],
+        "order": 15,
+        "is_active": true
+    },
+    {
+        "name": "Travail d'équipe",
+        "icon": "teamwork",
+        "level": 90,
+        "category": "soft_skills",
+        "description": "Collaboration efficace au sein d'une équipe, partage de connaissances et entraide.",
+        "related_skills": ["Communication", "Résolution de problèmes"],
+        "order": 16,
+        "is_active": true
+    },
+    {
+        "name": "Résolution de problèmes",
+        "icon": "problemsolving",
+        "level": 95,
+        "category": "soft_skills",
+        "description": "Capacité à analyser, décomposer et résoudre des problèmes complexes de manière méthodique.",
+        "related_skills": ["Adaptabilité", "Travail d'équipe"],
+        "order": 17,
+        "is_active": true
+    },
+    {
+        "name": "Adaptabilité",
+        "icon": "adaptability",
+        "level": 90,
+        "category": "soft_skills",
+        "description": "Capacité à s'adapter rapidement aux nouvelles technologies, méthodes de travail et environnements.",
+        "related_skills": ["Résolution de problèmes", "Communication"],
+        "order": 18,
+        "is_active": true
+    }
+]

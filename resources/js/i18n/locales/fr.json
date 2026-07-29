@@ -1,0 +1,244 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "about": "À propos",
+        "work": "Réalisations",
+        "skills": "Compétences",
+        "projects": "Projets",
+        "blog": "Blog",
+        "testimonials": "Témoignages",
+        "contact": "Contact"
+    },
+    "home": {
+        "hero": {
+            "eyebrow": "// Développeur Full-Stack basé à Madagascar",
+            "title": "Je construis des applications web solides, de A à Z.",
+            "title_prefix": "Je construis des ",
+            "title_highlight": "applications web solides",
+            "title_suffix": ", de A à Z.",
+            "subtitle": "Laravel, Vue.js et Tailwind — du back-end à l'interface, sans compromis sur la qualité.",
+            "cta_primary": "Voir mes projets",
+            "cta_secondary": "Me contacter",
+            "status": "Disponible pour de nouveaux projets",
+            "scroll": "Défiler",
+            "find_me": "Suivez-moi →",
+            "follow_me": "Suivez-moi"
+        },
+        "about_preview": {
+            "eyebrow": "À propos",
+            "title": "Un développeur, une approche complète",
+            "cta": "En savoir plus"
+        },
+        "skills_preview": {
+            "eyebrow": "Compétences",
+            "title": "Les outils que je maîtrise",
+            "cta": "Voir toutes les compétences",
+            "level": "Niveau"
+        },
+        "projects_preview": {
+            "eyebrow": "Projets",
+            "title": "Réalisations récentes",
+            "cta": "Voir tous les projets"
+        },
+        "testimonials_preview": {
+            "eyebrow": "Témoignages",
+            "title": "Ce que disent mes clients",
+            "cta": "Voir tous les témoignages"
+        },
+        "contact_cta": {
+            "title": "Un projet en tête ?",
+            "subtitle": "Discutons-en, sans engagement.",
+            "cta": "Envoyer un message"
+        }
+    },
+    "footer": {
+        "rights": "Tous droits réservés.",
+        "tagline": "Développeur web full-stack basé à Madagascar.",
+        "navigation": "Navigation",
+        "contact": "Contact",
+        "location": "Madagascar",
+        "crafted_with": "Fait avec Laravel, Vue.js & Tailwind CSS",
+        "tech_stack": "Stack technique",
+        "copy_email": "Copier l'email",
+        "copy_hint": "Cliquer pour copier",
+        "copied": "Copié !",
+        "back_to_top": "Retour en haut",
+        "connect_cta": "Démarrer une conversation"
+    },
+    "meta": {
+        "about": {
+            "title": "À propos — Portfolio"
+        },
+        "contact": {
+            "title": "Contact — Discutons de votre projet",
+            "description": "Vous avez un projet, une question ou une opportunité ? Contactez-moi par email, WhatsApp ou via le formulaire de contact.",
+            "og_title": "Contact — Discutons de votre projet",
+            "og_description": "Email, WhatsApp ou formulaire : choisissez le canal qui vous convient pour échanger sur votre projet."
+        }
+    },
+    "contact": {
+        "page_title": "Contact",
+        "eyebrow": "// Discutons de votre projet",
+        "heading": "Me contacter",
+        "subtitle": "Vous avez un projet, une question ou une opportunité ? Envoyez-moi un message.",
+        "required_hint": "Champs obligatoires",
+        "form": {
+            "title": "Envoyer un message",
+            "subtitle": "Remplissez le formulaire ci-dessous, je reviens vers vous rapidement.",
+            "description": "Remplissez le formulaire ci-dessous, je reviens vers vous rapidement."
+        },
+        "meta": {
+            "title": "Contact — Discutons de votre projet",
+            "description": "Vous avez un projet, une question ou une opportunité ? Contactez-moi par email, WhatsApp ou via le formulaire de contact.",
+            "og_title": "Contact — Discutons de votre projet",
+            "og_description": "Email, WhatsApp ou formulaire : choisissez le canal qui vous convient pour échanger sur votre projet.",
+            "twitter_title": "Contact — Discutons de votre projet",
+            "twitter_description": "Email, WhatsApp ou formulaire : choisissez le canal qui vous convient pour échanger sur votre projet."
+        },
+        "errors": {
+            "name_required": "Merci d'indiquer votre nom.",
+            "name_max": "Le nom ne peut pas dépasser 100 caractères.",
+            "email_required": "Merci d'indiquer votre email.",
+            "email_invalid": "Cet email ne semble pas valide.",
+            "subject_required": "Merci d'indiquer un sujet.",
+            "subject_max": "Le sujet ne peut pas dépasser 150 caractères.",
+            "message_required": "Merci d'écrire votre message.",
+            "message_min": "Votre message doit contenir au moins 10 caractères.",
+            "message_max": "Votre message ne peut pas dépasser 5000 caractères.",
+            "honeypot": "Spam détecté."
+        },
+        "status": {
+            "send": "Envoyer le message",
+            "sending": "Envoi en cours..."
+        },
+        "alerts": {
+            "success": {
+                "title": "Message envoyé !",
+                "message": "Merci, je vous réponds dans les plus brefs délais."
+            }
+        },
+        "fields": {
+            "name": "Nom",
+            "email": "Email",
+            "subject": "Sujet",
+            "message": "Message"
+        },
+        "placeholders": {
+            "name": "Votre nom",
+            "email": "votre{'@'}email.com",
+            "subject": "Sujet de votre message",
+            "message": "Décrivez votre projet en quelques lignes..."
+        },
+        "buttons": {
+            "send": "Envoyer le message",
+            "sending": "Envoi en cours..."
+        },
+        "success": {
+            "title": "Message envoyé !",
+            "message": "Merci, je vous réponds dans les plus brefs délais."
+        },
+        "validation": {
+            "name_required": "Merci d'indiquer votre nom.",
+            "name_max": "Le nom ne peut pas dépasser 100 caractères.",
+            "email_required": "Merci d'indiquer votre email.",
+            "email_invalid": "Cet email ne semble pas valide.",
+            "subject_required": "Merci d'indiquer un sujet.",
+            "subject_max": "Le sujet ne peut pas dépasser 150 caractères.",
+            "message_required": "Merci d'écrire votre message.",
+            "message_min": "Votre message doit contenir au moins 10 caractères.",
+            "message_max": "Votre message ne peut pas dépasser 5000 caractères."
+        },
+        "direct": {
+            "title": "Contact direct",
+            "subtitle": "Préférez un échange rapide ? Utilisez l'un de ces canaux.",
+            "email": "Email",
+            "copy_email": "Copier l'email",
+            "copied": "Copié !",
+            "whatsapp": "WhatsApp",
+            "phone": "Appeler",
+            "socials": "Retrouvez-moi aussi sur",
+            "availability": "Réponse sous 24 à 48 heures ouvrées",
+            "location_label": "Basé à"
+        }
+    },
+    "blog": {
+        "eyebrow": "// Blog",
+        "title": "Blog",
+        "subtitle": "Réflexions sur le développement web, Laravel, Vue.js et plus.",
+        "meta": {
+            "title": "Blog",
+            "description": "Articles sur le développement web, Laravel, Vue.js et plus."
+        },
+        "feed": {
+            "title": "Flux RSS du blog"
+        },
+        "search": {
+            "label": "Rechercher",
+            "placeholder": "Rechercher un article…"
+        },
+        "filters": {
+            "categories": "Catégories",
+            "tags": "Tags",
+            "all": "Tous",
+            "reset": "Réinitialiser les filtres"
+        },
+        "reading_time": "min de lecture",
+        "empty": {
+            "title": "Aucun article trouvé",
+            "message": "Aucun article ne correspond à votre recherche ou aux filtres sélectionnés."
+        },
+        "pagination": {
+            "previous": "Précédent",
+            "next": "Suivant",
+            "page": "Page {current} sur {total}"
+        },
+        "show": {
+            "back": "Retour au blog",
+            "related": "Articles similaires",
+            "published_on": "Publié le {date}",
+            "category_label": "Catégorie",
+            "tags_label": "Tags"
+        },
+        "breadcrumb": {
+            "home": "Accueil",
+            "blog": "Blog"
+        }
+    },
+    "about": {
+        "experience_title": "Expériences",
+        "education_title": "Formation",
+        "download_cv": "Télécharger CV",
+        "contact_me": "Me contacter",
+        "stat_years": "Années",
+        "stat_experiences": "Expériences",
+        "stat_education": "Diplômes"
+    },
+    "skills": {
+        "eyebrow": "// Mes compétences",
+        "title": "Compétences techniques",
+        "subtitle": "Les technologies et outils que j'utilise au quotidien pour construire des applications web robustes.",
+        "categories": {
+            "all": "Toutes",
+            "backend": "Back-end",
+            "frontend": "Front-end",
+            "devops": "DevOps & Outils",
+            "design": "Design & UI",
+            "database": "Base de données",
+            "other": "Autres"
+        },
+        "level": {
+            "label": "Niveau",
+            "beginner": "Débutant",
+            "intermediate": "Intermédiaire",
+            "advanced": "Avancé",
+            "expert": "Expert"
+        },
+        "related_skills": "Compétences associées",
+        "no_skills": "Aucune compétence trouvée pour cette catégorie.",
+        "coming_soon": "Cette page est en cours de construction.",
+        "meta": {
+            "title": "Compétences — Portfolio",
+            "description": "Découvrez mes compétences techniques : Laravel, Vue.js, Tailwind CSS, PHP, MySQL et plus."
+        }
+    }
+}

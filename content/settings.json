@@ -1,0 +1,61 @@
+{
+    "site_name": "FIN FANILONANTENAINA Joseph",
+    "job_title": {
+        "fr": "Développeur Web Laravel & Designer",
+        "en": "Laravel Web Developer & Designer",
+        "mg": "Mpamorona tranokala Laravel & Designer"
+    },
+    "hero_headline": {
+        "fr": "Bonjour, je suis FIN Joseph",
+        "en": "Hi, I am FIN Joseph",
+        "mg": "Salama, izaho dia FIN Joseph"
+    },
+    "hero_tagline": {
+        "fr": "Je conçois des expériences web modernes et performantes.",
+        "en": "I build modern, high-performance web experiences.",
+        "mg": "Mamorona tranokala maoderina aho."
+    },
+    "hero_description": {
+        "fr": "Développeur passionné basé à Madagascar, spécialisé en Laravel et Vue.js. J'aime transformer des idées en produits web concrets et bien pensés.",
+        "en": "Passionate developer based in Madagascar, specialized in Laravel and Vue.js. I love turning ideas into well-crafted web products.",
+        "mg": "Mpamorona tranokala any Madagasikara, mahay Laravel sy Vue.js."
+    },
+    "hero_cta_primary": {
+        "fr": "Voir mes projets",
+        "en": "See my projects",
+        "mg": "Hijery ny asako"
+    },
+    "hero_cta_secondary": {
+        "fr": "Me contacter",
+        "en": "Contact me",
+        "mg": "Mifandraisa amiko"
+    },
+    "availability_badge": {
+        "fr": "Disponible pour missions",
+        "en": "Available for freelance",
+        "mg": "Miafara amin'ny asa"
+    },
+    "bio": {
+        "fr": "Développeur passionné basé à Madagascar, spécialisé en Laravel et Vue.js. J'aime transformer des idées en produits web concrets et bien pensés.",
+        "en": "Passionate developer based in Madagascar, specialized in Laravel and Vue.js. I love turning ideas into well-crafted web products.",
+        "mg": "Mpamorona tranokala any Madagasikara, mahay Laravel sy Vue.js."
+    },
+    "avatar": "/images/settings/avatar.jpg",
+    "email": "finjoseph433@gmail.com",
+    "phone": "+261344793333",
+    "social_links": {
+        "github": "https://github.com/FinJoseph",
+        "linkedin": null,
+        "twitter": null
+    },
+    "default_meta_title": {
+        "fr": "Mon Portfolio - Développeur Web",
+        "en": "My Portfolio - Web Developer",
+        "mg": "Portfolioko - Mpamorona tranokala"
+    },
+    "default_meta_description": {
+        "fr": "Portfolio professionnel présentant mes projets, compétences et services de développement web.",
+        "en": "Professional portfolio showcasing my projects, skills, and web development services.",
+        "mg": "Portfolio manondro ny asa sy fahaiza-manaoko."
+    }
+}

@@ -1,0 +1,58 @@
+<h2>Quel style d'ombre verte animée ?</h2>
+<p class="subtitle">On garde la grille existante. On remplace juste la ligne de scan verticale par un effet de profondeur vert.</p>
+
+<div class="cards">
+  <div class="card" data-choice="orbs" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#0f172a;position:relative;overflow:hidden;min-height:160px;display:flex;align-items:center;justify-content:center;">
+      <div style="position:absolute;width:80px;height:80px;border-radius:50%;background:#10b981;filter:blur(30px);opacity:.6;animation:floatA 5s ease-in-out infinite;"></div>
+      <div style="position:absolute;width:60px;height:60px;border-radius:50%;background:#34d399;filter:blur(25px);opacity:.4;animation:floatB 6s ease-in-out infinite;"></div>
+      <span style="position:relative;color:#fff;font-size:12px;z-index:2;">Mockup</span>
+    </div>
+    <div class="card-body">
+      <h3>A — Orbes flottants</h3>
+      <p>Quelques halos verts flous et ronds qui se déplacent lentement en arrière-plan. Effet "bokeh tech" doux.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="aurora" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#0f172a;position:relative;overflow:hidden;min-height:160px;display:flex;align-items:center;justify-content:center;">
+      <div style="position:absolute;inset:-20px;background:linear-gradient(120deg,transparent,#10b98133,transparent,#34d39922,transparent);background-size:200% 200%;animation:aurora 8s ease-in-out infinite;"></div>
+      <span style="position:relative;color:#fff;font-size:12px;z-index:2;">Mockup</span>
+    </div>
+    <div class="card-body">
+      <h3>B — Aurora / vague</h3>
+      <p>Une lueur verte ondulante en haut ou en bas de l'écran, comme une aurore boréale discrète.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="mouse" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#0f172a;position:relative;overflow:hidden;min-height:160px;display:flex;align-items:center;justify-content:center;">
+      <div style="position:absolute;width:100px;height:100px;border-radius:50%;background:#10b981;filter:blur(40px);opacity:.5;transform:translate(10px,10px);animation:pulse 3s ease-in-out infinite;"></div>
+      <span style="position:relative;color:#fff;font-size:12px;z-index:2;">Mockup</span>
+    </div>
+    <div class="card-body">
+      <h3>C — Halo réactif</h3>
+      <p>Un seul grand halo vert qui suit ou accompagne le mouvement de la page/curseur. Plus interactif.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+@keyframes floatA {
+  0%,100% { transform: translate(-30px,-10px); }
+  50% { transform: translate(30px,10px); }
+}
+@keyframes floatB {
+  0%,100% { transform: translate(20px,20px); }
+  50% { transform: translate(-20px,-20px); }
+}
+@keyframes aurora {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes pulse {
+  0%,100% { transform: scale(1); opacity:.45; }
+  50% { transform: scale(1.15); opacity:.65; }
+}
+</style>

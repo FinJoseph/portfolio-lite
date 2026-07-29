@@ -1,0 +1,102 @@
+[
+    {
+        "title": {
+            "fr": "Chargé d'Enrôlement Biométrique",
+            "en": "Biometric Enrollment Officer",
+            "mg": "Mpitantana ny fisoratana biometrika"
+        },
+        "company": {
+            "fr": "Projet PRODIGY",
+            "en": "PRODIGY Project",
+            "mg": "Tetikasa PRODIGY"
+        },
+        "description": {
+            "fr": "Gestion logistique des opérations sur le terrain, collecte et fiabilisation de données, sensibilisation et coordination avec les autorités locales et populations rurales.",
+            "en": "Logistical management of field operations, data collection and validation, community outreach and coordination with local authorities and rural populations.",
+            "mg": "Fitantanana logistika ny operations eny an-tsaha, fanangonana sy fanamarinana data, fiaraha-miasa amin'ny manam-pahefana eo an-toerana."
+        },
+        "duration": "Mars - Juin 2026",
+        "start_date": "2026-03",
+        "end_date": "2026-06",
+        "location": "Madagascar",
+        "company_url": null,
+        "company_logo": null,
+        "order": 1,
+        "is_active": true
+    },
+    {
+        "title": {
+            "fr": "Développeur Web & Chef de Projet Freelance",
+            "en": "Freelance Web Developer & Project Manager",
+            "mg": "Mpamorona tranokala & Mpitantana tetikasa tsy miankina"
+        },
+        "company": {
+            "fr": "Freelance (Projet AIM)",
+            "en": "Freelance (AIM Project)",
+            "mg": "Freelance (Tetikasa AIM)"
+        },
+        "description": {
+            "fr": "Pilotage complet d'une plateforme de gestion de 6 000 membres (Scouts de Madagascar). Analyse des besoins, structuration des données, développement Laravel/Vue.js et formation des utilisateurs. Adoption à 100 %, réduction de 50 % du temps de saisie.",
+            "en": "Complete management of a member management platform for 6,000 members (Scouts of Madagascar). Needs analysis, data structuring, Laravel/Vue.js development and user training. 100% adoption, 50% reduction in data entry time.",
+            "mg": "Fitantanana feno ny sehatra fitantanana mpikambana 6 000 (Skoto eto Madagasikara). Famakafakana ny filàna, fandrafetana data, fampandrosoana Laravel/Vue.js sy fanofanana mpampiasa."
+        },
+        "duration": "Octobre 2025 - Janvier 2026",
+        "start_date": "2025-10",
+        "end_date": "2026-01",
+        "location": "Madagascar",
+        "company_url": null,
+        "company_logo": null,
+        "order": 2,
+        "is_active": true
+    },
+    {
+        "title": {
+            "fr": "Responsable des Opérations et de la Planification",
+            "en": "Operations and Planning Manager",
+            "mg": "Mpitantana ny Operations sy ny Planification"
+        },
+        "company": {
+            "fr": "Hôtel Restaurant La Vanille",
+            "en": "Hôtel Restaurant La Vanille",
+            "mg": "Hôtel Restaurant La Vanille"
+        },
+        "description": {
+            "fr": "Mise en place et suivi de procédures internes, coordination d'équipe, gestion des relations avec les parties prenantes, élaboration de plans d'action correctifs, organisation et gestion des ressources.",
+            "en": "Implementation and monitoring of internal procedures, team coordination, stakeholder relations management, corrective action plans, resource organization and management.",
+            "mg": "Fametrahana sy fanarahana ny fomba fiasa anatiny, fandrindrana ny ekipa, fitantanana ny fifandraisana amin'ny mpiara-miombon'antoka."
+        },
+        "duration": "Octobre 2024 - Avril 2025",
+        "start_date": "2024-10",
+        "end_date": "2025-04",
+        "location": "Manakara, Madagascar",
+        "company_url": null,
+        "company_logo": null,
+        "order": 3,
+        "is_active": true
+    },
+    {
+        "title": {
+            "fr": "Stagiaire Développeur",
+            "en": "Intern Developer",
+            "mg": "Mpiofana Mpamorona"
+        },
+        "company": {
+            "fr": "RSI FID Madagascar",
+            "en": "RSI FID Madagascar",
+            "mg": "RSI FID Madagascar"
+        },
+        "description": {
+            "fr": "Réalisation d'une application de gestion de pointage des employés et visiteurs. Développement et déploiement d'une solution de suivi de présence.",
+            "en": "Development of an employee and visitor time-tracking application. Development and deployment of a presence tracking solution.",
+            "mg": "Famoronana application fitantanana ny fisian'ny mpiasa sy mpitsidika. Fampandrosoana sy fametrahana vahaolana fanarahana ny fisiana."
+        },
+        "duration": "2023 (3 mois)",
+        "start_date": "2023-01",
+        "end_date": "2023-03",
+        "location": "Manakara, Madagascar",
+        "company_url": null,
+        "company_logo": null,
+        "order": 4,
+        "is_active": true
+    }
+]

@@ -1,0 +1,244 @@
+{
+    "nav": {
+        "home": "Fandraisana",
+        "about": "Momba ahy",
+        "work": "Asa",
+        "skills": "Fahaiza-manao",
+        "projects": "Tetikasa",
+        "blog": "Blog",
+        "testimonials": "Fitantarana",
+        "contact": "Fifandraisana"
+    },
+    "home": {
+        "hero": {
+            "eyebrow": "// Mpamorona tranokala any Madagasikara",
+            "title": "Mamorona rindrambaiko matanjaka aho, hatramin'ny fototra.",
+            "title_prefix": "Mamorona ",
+            "title_highlight": "rindrambaiko matanjaka",
+            "title_suffix": " aho, hatramin'ny fototra.",
+            "subtitle": "Laravel, Vue.js ary Tailwind — tsy misy fanekena ny kalitao.",
+            "cta_primary": "Jereo ny tetikasa",
+            "cta_secondary": "Mifandraisa amiko",
+            "status": "Vonona hiasa amin'ny tetikasa vaovao",
+            "scroll": "Midina",
+            "find_me": "Araho aho →",
+            "follow_me": "Araho aho"
+        },
+        "about_preview": {
+            "eyebrow": "Momba ahy",
+            "title": "Mpamorona iray, fomba fiasa feno",
+            "cta": "Fantaro bebe kokoa"
+        },
+        "skills_preview": {
+            "eyebrow": "Fahaiza-manao",
+            "title": "Ny fitaovana ampiasaiko",
+            "cta": "Jereo ny fahaiza-manao rehetra",
+            "level": "Level"
+        },
+        "projects_preview": {
+            "eyebrow": "Tetikasa",
+            "title": "Asa vao haingana",
+            "cta": "Jereo ny tetikasa rehetra"
+        },
+        "testimonials_preview": {
+            "eyebrow": "Fitantarana",
+            "title": "Ny lazain'ny mpanjifa",
+            "cta": "Jereo ny fitantarana rehetra"
+        },
+        "contact_cta": {
+            "title": "Manana tetikasa ve ianao?",
+            "subtitle": "Andao hiresaka.",
+            "cta": "Alefaso hafatra"
+        }
+    },
+    "footer": {
+        "rights": "Zo rehetra voatokana.",
+        "tagline": "Mpamorona tranokala any Madagasikara.",
+        "navigation": "Fialam-boly",
+        "contact": "Fifandraisana",
+        "location": "Madagasikara",
+        "crafted_with": "Natao tamin'ny Laravel, Vue.js & Tailwind CSS",
+        "tech_stack": "Teknika",
+        "copy_email": "Adikao ny email",
+        "copy_hint": "Tsindrio raha adika",
+        "copied": "Vita nadika!",
+        "back_to_top": "Hiverina any ambony",
+        "connect_cta": "Manomboha resaka"
+    },
+    "meta": {
+        "about": {
+            "title": "Momba ahy — Portfolio"
+        },
+        "contact": {
+            "title": "Fifandraisana — Andao hiresaka momba ny tetikasanao",
+            "description": "Manana tetikasa, fanontaniana, na fahafahana ve ianao? Mifandraisa amin'ny email, WhatsApp, na amin'ny alalan'ny fandraisan'ny hafatra.",
+            "og_title": "Fifandraisana — Andao hiresaka momba ny tetikasanao",
+            "og_description": "Email, WhatsApp, na hafatra: safidio ny fomba tianao hiresahana momba ny tetikasanao."
+        }
+    },
+    "contact": {
+        "page_title": "Fifandraisana",
+        "eyebrow": "// Andao hiresaka momba ny tetikasanao",
+        "heading": "Mifandraisa amiko",
+        "subtitle": "Manana tetikasa, fanontaniana, na fahafahana ve ianao? Alefaso hafatra amiko.",
+        "required_hint": "Fampidirana ilaina",
+        "form": {
+            "title": "Alefaso hafatra",
+            "subtitle": "Fenoy ny fandraisan-kafatra eto ambany, dia hamaly haingana aho.",
+            "description": "Fenoy ny fandraisan-kafatra eto ambany, dia hamaly haingana aho."
+        },
+        "meta": {
+            "title": "Fifandraisana — Andao hiresaka momba ny tetikasanao",
+            "description": "Manana tetikasa, fanontaniana, na fahafahana ve ianao? Mifandraisa amin'ny email, WhatsApp, na amin'ny alalan'ny fandraisan'ny hafatra.",
+            "og_title": "Fifandraisana — Andao hiresaka momba ny tetikasanao",
+            "og_description": "Email, WhatsApp, na hafatra: safidio ny fomba tianao hiresahana momba ny tetikasanao.",
+            "twitter_title": "Fifandraisana — Andao hiresaka momba ny tetikasanao",
+            "twitter_description": "Email, WhatsApp, na hafatra: safidio ny fomba tianao hiresahana momba ny tetikasanao."
+        },
+        "errors": {
+            "name_required": "Ampidiro ny anaranao azafady.",
+            "name_max": "Ny anarana tsy tokony hihoatra ny 100 litera.",
+            "email_required": "Ampidiro ny email-nao azafady.",
+            "email_invalid": "Io email io tsy mety.",
+            "subject_required": "Ampidiro ny lohateny azafady.",
+            "subject_max": "Ny lohateny tsy tokony hihoatra ny 150 litera.",
+            "message_required": "Sorato ny hafatra azafady.",
+            "message_min": "Ny hafatra tsy maintsy manana 10 litera farafahakeliny.",
+            "message_max": "Ny hafatra tsy tokony hihoatra ny 5000 litera.",
+            "honeypot": "Spam hita."
+        },
+        "status": {
+            "send": "Alefaso ny hafatra",
+            "sending": "Alefa..."
+        },
+        "alerts": {
+            "success": {
+                "title": "Voalefa ny hafatra!",
+                "message": "Misaotra, hamaly anao haingana aho."
+            }
+        },
+        "fields": {
+            "name": "Anarana",
+            "email": "Email",
+            "subject": "Lohateny",
+            "message": "Hafatra"
+        },
+        "placeholders": {
+            "name": "Ny anaranao",
+            "email": "ny{'@'}email.com",
+            "subject": "Ny lohatenin'ny hafatrao",
+            "message": "Farito ny tetikasanao amin'ny andalana vitsy..."
+        },
+        "buttons": {
+            "send": "Alefaso ny hafatra",
+            "sending": "Alefa..."
+        },
+        "success": {
+            "title": "Voalefa ny hafatra!",
+            "message": "Misaotra, hamaly anao haingana aho."
+        },
+        "validation": {
+            "name_required": "Ampidiro ny anaranao azafady.",
+            "name_max": "Ny anarana tsy tokony hihoatra ny 100 litera.",
+            "email_required": "Ampidiro ny email-nao azafady.",
+            "email_invalid": "Io email io tsy mety.",
+            "subject_required": "Ampidiro ny lohateny azafady.",
+            "subject_max": "Ny lohateny tsy tokony hihoatra ny 150 litera.",
+            "message_required": "Sorato ny hafatra azafady.",
+            "message_min": "Ny hafatra tsy maintsy manana 10 litera farafahakeliny.",
+            "message_max": "Ny hafatra tsy tokony hihoatra ny 5000 litera."
+        },
+        "direct": {
+            "title": "Fifandraisana mivantana",
+            "subtitle": "Tianao resaka haingana ve? Safidio ny fomba tianao.",
+            "email": "Email",
+            "copy_email": "Adikao ny email",
+            "copied": "Vita nadika!",
+            "whatsapp": "WhatsApp",
+            "phone": "Antsoy",
+            "socials": "Araho aho koa amin'ireto",
+            "availability": "Mamaly ao anatin'ny 24–48 ora fiasana",
+            "location_label": "Mipetraka any"
+        }
+    },
+    "blog": {
+        "eyebrow": "// Blog",
+        "title": "Blog",
+        "subtitle": "Hevitra momba ny fampandroana tranokala, Laravel, Vue.js sy hafa.",
+        "meta": {
+            "title": "Blog",
+            "description": "Lahatsoratra momba ny fampandroana tranokala, Laravel, Vue.js sy hafa."
+        },
+        "feed": {
+            "title": "RSS feed-n'ny blog"
+        },
+        "search": {
+            "label": "Karohy",
+            "placeholder": "Karohy lahatsoratra…"
+        },
+        "filters": {
+            "categories": "Sokajy",
+            "tags": "Tags",
+            "all": "Rehetra",
+            "reset": "Avereno ny sivana"
+        },
+        "reading_time": "min famakiana",
+        "empty": {
+            "title": "Tsy misy lahatsoratra hita",
+            "message": "Tsy misy lahatsoratra mifanandrify amin'ny fikarohanao na ny sivana."
+        },
+        "pagination": {
+            "previous": "Teo aloha",
+            "next": "Manaraka",
+            "page": "Pejy {current} amin'ny {total}"
+        },
+        "show": {
+            "back": "Hiverina amin'ny blog",
+            "related": "Lahatsoratra mifandraika",
+            "published_on": "Navoaka tamin'ny {date}",
+            "category_label": "Sokajy",
+            "tags_label": "Tags"
+        },
+        "breadcrumb": {
+            "home": "Fandraisana",
+            "blog": "Blog"
+        }
+    },
+    "about": {
+        "experience_title": "Experience",
+        "education_title": "Fanabeazana",
+        "download_cv": "Alaivo ny CV",
+        "contact_me": "Hifandray amiko",
+        "stat_years": "Taona",
+        "stat_experiences": "Traikefa",
+        "stat_education": "Diploma"
+    },
+    "skills": {
+        "eyebrow": "// Fahaiza-manako",
+        "title": "Fahaiza-manao teknika",
+        "subtitle": "Ny fitaovana sy zava-mirohy ampiasainako isaky ny andro hamorona rindrambaiko matanjaka.",
+        "categories": {
+            "all": "Rehetra",
+            "backend": "Back-end",
+            "frontend": "Front-end",
+            "devops": "DevOps & Zava-mirohy",
+            "design": "Design & UI",
+            "database": "Baziny data",
+            "other": "Hafa"
+        },
+        "level": {
+            "label": "Antony",
+            "beginner": "Vohamana",
+            "intermediate": "Ambanivohitra",
+            "advanced": "Avaratra",
+            "expert": "Daholo"
+        },
+        "related_skills": "Fahaiza-manao mifandraika",
+        "no_skills": "Tsy misy fahaiza-manao hita amin'io sokajy io.",
+        "coming_soon": "Io pejy io mbola ao anatin'ny fiasa.",
+        "meta": {
+            "title": "Fahaiza-manao — Portfolio",
+            "description": "Mahalala ny fahaiza-manako teknika: Laravel, Vue.js, Tailwind CSS, PHP, MySQL sy hafa."
+        }
+    }
+}
