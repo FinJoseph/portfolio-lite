@@ -1,58 +1,112 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300">
+    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300">
+  </picture>
 </p>
 
-## About Laravel
+# Portfolio Lite — Laravel 13 + Inertia + Vue 3
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Portfolio professionnel **sans base de données**, 100% fichier, hébergeable gratuitement.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**Auteur :** FIN FANILONANTENAINA Joseph — Développeur Laravel & Designer (Madagascar)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## Stack technique
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+| Composant | Technologie |
+|---|---|
+| Backend | Laravel 13.18+ |
+| Frontend SPA | Vue 3.5 (Composition API) |
+| Bridge SPA | Inertia.js 3.6 |
+| CSS | Tailwind CSS 4.3 |
+| Build | Vite 8 |
+| i18n | vue-i18n 11 (FR / EN / MG) |
+| Recherche | Fuse.js 7 |
+| PDF | barryvdh/laravel-dompdf |
+| Parsing | spatie/yaml-front-matter |
+| Sitemap | spatie/laravel-sitemap |
+| Tests | Pest 4 |
+| PHP | 8.3+ |
+| BDD | Aucune |
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Fonctionnalités
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+- **SPA complète** — 10 pages (Accueil, À propos, Compétences, Projets, Blog, Témoignages, Contact)
+- **Multilingue** — Français, English, Malagasy
+- **Dark / Light mode** — Bascule en direct, persistance localStorage
+- **Responsive** — Mobile + Desktop, Tailwind utility-first
+- **CyberGrid** — Fond cyberpunk animé (SVG + halos verts)
+- **Animations fluides** — Staggered entrances, Ken Burns, IntersectionObserver
+- **SEO** — Meta dynamiques (<Head> Inertia), JSON-LD, sitemap XML, RSS, Open Graph
+- **CV PDF** — Génération à la volée via dompdf
+- **Recherche full-text** — Fuse.js côté client sur index JSON
+- **API REST** — v1 (projets, compétences, expériences, éducation, témoignages)
+- **File-based** — Contenu en fichiers JSON + Markdown, zéro dépendance BDD
+- **Repository pattern** — 7 repositories avec interfaces + DTO + injection de dépendances
+- **Cache** — Cache::remember() avec système de tags et invalidation
+- **Health check** — Endpoint `/up`
+- **Contact** — Formulaire avec honeypot + throttle (5/min)
+- **Preview** — URLs signées pour brouillons projets/articles
+- **CI/CD ready** — GitHub Actions, déploiement Render/Fly.io
 
-## Agentic Development
+## Structure du projet
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+```
+content/
+├── projects/          # Projets (Markdown, 1 fichier par langue)
+├── articles/          # Articles de blog (Markdown)
+├── skills.json        # Compétences
+├── experiences.json   # Expériences professionnelles
+├── education.json     # Formation
+├── testimonials.json  # Témoignages
+└── settings.json      # Configuration globale
 
-```bash
-composer require laravel/boost --dev
+app/
+├── Http/
+│   ├── Controllers/   # Contrôleurs Inertia + API REST
+│   └── Requests/      # Form Requests (validation)
+├── Repositories/      # Interfaces + Implémentations (File/JSON)
+├── DTOs/              # Data Transfer Objects
+└── Services/          # Logique métier
 
-php artisan boost:install
+resources/js/
+├── Pages/             # Pages Vue (Home, About, Skills, Projects, Blog, Contact...)
+├── Components/        # Composants réutilisables (UI, Layout)
+├── Layouts/           # AppLayout (Navbar + Footer)
+├── Composables/       # useDarkMode, useScrollAnimation...
+└── i18n/locales/      # Traductions FR/EN/MG
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+## Démarrage rapide
 
-## Contributing
+```bash
+composer install
+npm install
+cp .env.example .env
+php artisan key:generate
+npm run build
+php artisan serve
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Tests
 
-## Code of Conduct
+```bash
+php artisan test
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+46+ tests Pest — repositories, routes, commandes.
 
-## Security Vulnerabilities
+## Déploiement
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Hébergement gratuit possible sur :
+- **[Render.com](https://render.com)** (free web service, HTTPS auto)
+- **[Fly.io](https://fly.io)** (VM légère, Dockerfile requis)
+- **Serverless** via Bref (AWS Lambda)
 
-## License
+Aucune base de données ➔ déploiement simplifié.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Licence
+
+MIT
