@@ -2,6 +2,7 @@
 
 **Version 1.2 — 2026-07-30** (mise à jour versions dépendances + statut réalisation)
 **Projet :** Portfolio professionnel — développeur web full-stack, Madagascar
+**Site en ligne :** [finjoseph.onrender.com](https://finjoseph.onrender.com/)
 **Type :** SPA Laravel + Vue/Inertia, **sans base de données**, 100% hébergeable gratuitement
 
 ---
