@@ -1,4 +1,5 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { Head, Link } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
@@ -8,10 +9,43 @@ import BaseButton from '@/Components/UI/BaseButton.vue';
 
 const { t } = useI18n();
 
-defineProps({
+const props = defineProps({
     project: { type: Object, required: true },
     relatedProjects: { type: Array, default: () => [] },
 });
+
+const selectedImage = ref(null);
+
+function openLightbox(img) {
+    selectedImage.value = img;
+}
+
+function closeLightbox() {
+    selectedImage.value = null;
+}
+
+function onKeydown(e) {
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') prevImage();
+    if (e.key === 'ArrowRight') nextImage();
+}
+
+onMounted(() => window.addEventListener('keydown', onKeydown));
+onUnmounted(() => window.removeEventListener('keydown', onKeydown));
+
+function prevImage() {
+    const gallery = props.project.gallery;
+    if (!gallery?.length) return;
+    const idx = gallery.indexOf(selectedImage.value);
+    if (idx > 0) selectedImage.value = gallery[idx - 1];
+}
+
+function nextImage() {
+    const gallery = props.project.gallery;
+    if (!gallery?.length) return;
+    const idx = gallery.indexOf(selectedImage.value);
+    if (idx < gallery.length - 1) selectedImage.value = gallery[idx + 1];
+}
 
 const statusConfig = {
     completed: { class: 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300' },
@@ -48,11 +82,15 @@ function statusLabel(status) {
             </div>
 
             <!-- Cover Image -->
-            <div v-if="project.coverImage" class="aspect-video rounded-2xl overflow-hidden bg-ink-light/10 dark:bg-white/5 mb-10">
+            <div
+                v-if="project.coverImage"
+                class="aspect-video rounded-2xl overflow-hidden bg-ink-light/10 dark:bg-white/5 mb-10 cursor-pointer"
+                @click="openLightbox(project.coverImage)"
+            >
                 <img
                     :src="project.coverImage"
                     :alt="project.title"
-                    class="w-full h-full object-cover"
+                    class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
             </div>
 
@@ -133,7 +171,12 @@ function statusLabel(status) {
                     :eyebrow="t('projects.eyebrow', 'Portfolio')"
                 />
                 <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div v-for="(img, i) in project.gallery" :key="i" class="rounded-xl overflow-hidden bg-ink-light/5 dark:bg-white/5">
+                    <div
+                        v-for="(img, i) in project.gallery"
+                        :key="i"
+                        class="rounded-xl overflow-hidden bg-ink-light/5 dark:bg-white/5 cursor-pointer"
+                        @click="openLightbox(img)"
+                    >
                         <img
                             :src="img"
                             :alt="`${project.title} - image ${i + 1}`"
@@ -143,6 +186,59 @@ function statusLabel(status) {
                     </div>
                 </div>
             </div>
+
+            <!-- Lightbox -->
+            <Teleport to="body">
+                <div
+                    v-if="selectedImage"
+                    class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+                    @click.self="closeLightbox"
+                >
+                    <button
+                        class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/25 transition-colors"
+                        @click="closeLightbox"
+                        aria-label="Fermer"
+                    >
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+
+                    <button
+                        v-if="project.gallery.length > 1"
+                        class="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/25 transition-colors"
+                        @click="prevImage"
+                        aria-label="Précédente"
+                    >
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+
+                    <img
+                        :src="selectedImage"
+                        class="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
+                        @click.stop
+                    />
+
+                    <button
+                        v-if="project.gallery.length > 1"
+                        class="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/25 transition-colors"
+                        @click="nextImage"
+                        aria-label="Suivante"
+                    >
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+
+                    <div
+                        class="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/70 text-sm font-mono"
+                    >
+                        {{ project.gallery.indexOf(selectedImage) + 1 }} / {{ project.gallery.length }}
+                    </div>
+                </div>
+            </Teleport>
 
             <!-- Related Projects -->
             <div v-if="relatedProjects.length" class="mt-16">
