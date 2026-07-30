@@ -2,10 +2,6 @@
 title: "Art Malagasy"
 slug: "art-malagasy"
 excerpt: "Site vitrine e-commerce pour la vente d'artisanat malgache. Présentation de produits traditionnels (paniers, chapeaux, rafia, corne de zébu) avec catalogue et témoignages artisans."
-cover_image: "/images/projects/art-malagasy/cover.jpg"
-gallery:
-  - "/images/projects/art-malagasy/screenshot-1.jpg"
-  - "/images/projects/art-malagasy/screenshot-2.jpg"
 category: "web"
 technologies: ["HTML5", "CSS3", "Bootstrap 4", "jQuery", "JavaScript"]
 site_url: null

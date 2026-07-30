@@ -2,10 +2,6 @@
 title: "Art Malagasy"
 slug: "art-malagasy"
 excerpt: "Tranokala fampisehoana e-commerce ho an'ny asa tanana malagasy. Mampiseho vokatra nentim-paharazana (harona, satroka, rafia, tandroky ny omby) miaraka amin'ny katalaogy sy fijoroana vavolombelona."
-cover_image: "/images/projects/art-malagasy/cover.jpg"
-gallery:
-  - "/images/projects/art-malagasy/screenshot-1.jpg"
-  - "/images/projects/art-malagasy/screenshot-2.jpg"
 category: "web"
 technologies: ["HTML5", "CSS3", "Bootstrap 4", "jQuery", "JavaScript"]
 site_url: null

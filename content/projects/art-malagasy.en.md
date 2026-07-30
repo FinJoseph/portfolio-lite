@@ -2,10 +2,6 @@
 title: "Art Malagasy"
 slug: "art-malagasy"
 excerpt: "E-commerce brochure website for Malagasy artisan crafts. Showcasing traditional products (baskets, hats, raffia, zebu horn) with product catalog and artisan testimonials."
-cover_image: "/images/projects/art-malagasy/cover.jpg"
-gallery:
-  - "/images/projects/art-malagasy/screenshot-1.jpg"
-  - "/images/projects/art-malagasy/screenshot-2.jpg"
 category: "web"
 technologies: ["HTML5", "CSS3", "Bootstrap 4", "jQuery", "JavaScript"]
 site_url: null

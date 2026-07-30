@@ -67,13 +67,17 @@ class FileProjectRepository implements ProjectRepositoryInterface
         $converter = new CommonMarkConverter;
         $htmlContent = $converter->convert($document->body())->getContent();
 
+        $slug = $meta['slug'];
+
+        [$coverImage, $gallery] = $this->discoverImages($slug, $meta);
+
         return [
             'title' => $meta['title'],
-            'slug' => $meta['slug'],
+            'slug' => $slug,
             'excerpt' => $meta['excerpt'],
             'content' => $htmlContent,
-            'coverImage' => $meta['cover_image'] ?? null,
-            'gallery' => $meta['gallery'] ?? [],
+            'coverImage' => $coverImage,
+            'gallery' => $gallery,
             'category' => $meta['category'] ?? 'web',
             'technologies' => $meta['technologies'] ?? [],
             'siteUrl' => $meta['site_url'] ?? null,
@@ -85,5 +89,44 @@ class FileProjectRepository implements ProjectRepositoryInterface
             'metaTitle' => $meta['meta_title'] ?? $meta['title'],
             'metaDescription' => $meta['meta_description'] ?? $meta['excerpt'],
         ];
+    }
+
+    protected function discoverImages(string $slug, array $meta): array
+    {
+        $imageDir = public_path("images/projects/{$slug}");
+
+        // Cover image : keep YAML value only if the file actually exists
+        $coverImage = $meta['cover_image'] ?? null;
+        if ($coverImage && !File::exists(public_path(ltrim($coverImage, '/')))) {
+            $coverImage = null;
+        }
+
+        // Gallery : auto-discover from directory
+        $gallery = [];
+        if (File::isDirectory($imageDir)) {
+            $files = File::files($imageDir);
+            foreach ($files as $file) {
+                $ext = strtolower($file->getExtension());
+                if (!in_array($ext, ['jpg', 'jpeg', 'png', 'gif', 'webp', 'avif'])) {
+                    continue;
+                }
+                $relativePath = '/images/projects/' . $slug . '/' . $file->getFilename();
+                if ($relativePath === $coverImage) {
+                    continue;
+                }
+                $gallery[] = $relativePath;
+            }
+            sort($gallery);
+        }
+
+        // Fallback : keep only YAML gallery entries that exist on disk
+        if (empty($gallery) && !empty($meta['gallery'])) {
+            $gallery = array_values(array_filter(
+                $meta['gallery'],
+                fn ($path) => File::exists(public_path(ltrim($path, '/')))
+            ));
+        }
+
+        return [$coverImage, $gallery];
     }
 }
