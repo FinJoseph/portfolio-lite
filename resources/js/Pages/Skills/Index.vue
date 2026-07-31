@@ -77,6 +77,13 @@ const levelColor = (level) => {
     return 'text-gray-500';
 };
 
+const barColor = (level) => {
+    if (level >= 90) return '#f59e0b';
+    if (level >= 70) return '#22c55e';
+    if (level >= 40) return '#3b82f6';
+    return '#6b7280';
+};
+
 watch(() => activeCategory.value, () => {
     searchQuery.value = '';
 });
@@ -160,9 +167,8 @@ watch(() => activeCategory.value, () => {
                                         </span>
                                         <div class="flex-1 h-1.5 bg-border dark:bg-border-dark rounded-full overflow-hidden">
                                             <div
-                                                :class="levelColor(skill.level).replace('text', 'bg')"
                                                 class="h-full rounded-full transition-all duration-1000 ease-out"
-                                                :style="{ width: skill.level + '%' }"
+                                                :style="{ width: skill.level + '%', backgroundColor: barColor(skill.level) }"
                                                 role="progressbar"
                                                 :aria-valuenow="skill.level"
                                                 aria-valuemin="0"

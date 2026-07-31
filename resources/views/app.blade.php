@@ -30,6 +30,9 @@
     @inertiaHead
 
     <meta name="google-site-verification" content="Rr_em-oySkUVt9Gwjog5HSfgdtecvQ1nNLxjUmU8PX0" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#c97a2b">
     <link rel="alternate" type="application/rss+xml" title="Flux RSS" href="/feed.xml" />
