@@ -47,6 +47,7 @@ Tous suivent le même pattern : `Interface` + `DTO` + implémentation (`File*` p
 - ✅ **`content/settings.json`** : `job_title`, `hero_description`, `bio` et `default_meta_description` mentionnent désormais Laravel **et** Next.js.
 - ✅ Docs mises à jour : `README.md` (tableau des 9 projets + règle des liens internes), `CAHIER_DES_CHARGES_PORTFOLIO_LITE.md` (v1.3, section 4.8), ce fichier.
 - ⚠️ **À faire** : le remote Git contient un PAT GitHub en clair dans l'URL → **rotation recommandée** + passage en remote sans token.
+- 📄 **Plan d'amélioration créé** : `PLAN_AMELIORATIONS.md` — 8 lots (crédibilité, fonctionnalités, design, accessibilité, perf, SEO, contenu, qualité) avec, pour chaque tâche, l'emplacement du code, les étapes et le critère de validation. Baseline mesurée : LCP 6,5 s · TTFB 4,0 s · 3,9 Mo d'images sur `/projects` · bundle JS 476 Ko · `useSearch` (Fuse.js) existant mais non branché · filtre statut projet manquant · 0 gestion de `prefers-reduced-motion` · aucune page légale · 3 repos GitHub privés (liens « Voir le code » en 404).
 
 ### Champs finaux par Repository (état définitif de la phase d'enrichissement)
 
