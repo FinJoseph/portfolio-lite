@@ -12,15 +12,17 @@ technologies: ["Laravel", "Filament", "Vue.js", "Tailwind CSS", "MySQL", "Chart.
 site_url: null
 github_url: "https://github.com/FinJoseph/aim-app-v2"
 completed_at: "2025-06"
-status: "in_progress"
+status: "in-progress"
 is_featured: true
-order: 1
+order: 4
 meta_title: "Antilin'i Madagasikara - Fampiharana fitantanana skoto"
 meta_description: "Fampiharana feno fitantanana mpikambana ho an'ny Skoto eto Madagasikara. Administrasiona Filament, tranokala Vue.js SPA, RBAC, blaogy, fandoavana sy hetsika."
 ---
 ## Fampidirana
 
 **Antilin'i Madagasikara** dia fampiharana web feno fitantanana mpikambana ho an'ny fikambanana skoto **Antilin'i Madagasikara (Scouts de Madagascar)**. Mampiaraka ny administrasiona Filament mahery sy tranokala publik Vue.js SPA maoderina.
+
+> ℹ️ Ity pejy ity dia milaza ny **dikan'ny Laravel / Filament / Vue.js** (v1). Ny sehatra dia natao **dikan'ny Next.js 16** — jereo ny pejy "[AIM App (Next.js)](/projects/aim-app-next)", navoaka ao amin'ny Vercel.
 
 ## Endri-javatra
 

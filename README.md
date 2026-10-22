@@ -9,7 +9,7 @@
 
 Portfolio professionnel **sans base de données**, 100% fichier, hébergeable gratuitement.
 
-**Auteur :** FIN FANILONANTENAINA Joseph — Développeur Laravel & Designer (Madagascar)
+**Auteur :** FIN FANILONANTENAINA Joseph — Développeur Full-Stack (Laravel · Next.js) & Designer (Madagascar)
 **Site en ligne :** [finjoseph.onrender.com](https://finjoseph.onrender.com/)
 
 ---
@@ -80,6 +80,27 @@ resources/js/
 └── i18n/locales/      # Traductions FR/EN/MG
 ```
 
+## Contenu mis en avant
+
+**9 projets** (FR / EN / MG) avec images de couverture, galerie, technologies, statut et liens (site live + dépôt GitHub) :
+
+| # | Projet | Stack principale | Statut | En ligne |
+|---|---|---|---|---|
+| 1 | **iKAALY** — marketplace de commande locale à Manakara | Next.js, React, TypeScript, Tailwind CSS, Supabase, PostgreSQL | Terminé | [ikaaly.vercel.app](https://ikaaly.vercel.app) |
+| 2 | **AIM App (Next.js)** — plateforme de gestion AIM (Scouts de Madagascar) | Next.js, React, TypeScript, Tailwind CSS, Drizzle ORM, PostgreSQL, shadcn/ui | En cours | [antilinimadagascar.vercel.app](https://antilinimadagascar.vercel.app) |
+| 3 | **Autocollant Mada** — e-commerce de stickers PC sur mesure | Next.js, React, TypeScript, Tailwind CSS, Prisma | Terminé | [autocollantmada.vercel.app](https://autocollantmada.vercel.app) |
+| 4 | Antilin'i Madagasikara — gestion des membres (scouts) | Laravel, Filament, Vue.js | En cours | — |
+| 5 | Portfolio professionnel (ce site) | Laravel, Filament, Vue.js, Inertia.js | Terminé | — |
+| 6 | Ikomandy — plateforme de services | Laravel, Filament, Vue.js | Terminé | — |
+| 7 | Horloge Mada | Laravel, Filament, Vue.js | Terminé | — |
+| 8 | ROI University | Laravel, Filament, Vue.js | Terminé | — |
+| 9 | Art Malagasy | Laravel, Filament, Vue.js | Terminé | — |
+
+**32 compétences** réparties en 7 catégories : Front-end, Back-end, Base de données, DevOps & Outils, Design & UI, Autres, Soft skills.
+Le niveau de chaque compétence est affiché et les compétences associées sont liées entre elles.
+
+> 💡 Les liens internes entre projets utilisent des URL **sans préfixe de locale** (`/projects/{slug}`) : la locale est résolue côté serveur via le cookie `locale` et l'en-tête `X-Locale`, pas via le chemin.
+
 ## Démarrage rapide
 
 ```bash
@@ -97,7 +118,7 @@ php artisan serve
 php artisan test
 ```
 
-46+ tests Pest — repositories, routes, commandes.
+68 tests Pest — repositories, routes, commandes.
 
 ## Déploiement
 

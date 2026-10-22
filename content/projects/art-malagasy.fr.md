@@ -9,7 +9,7 @@ github_url: "https://github.com/FinJoseph/art-malagasy"
 completed_at: "2024-09"
 status: "completed"
 is_featured: false
-order: 5
+order: 9
 meta_title: "Art Malagasy - Site e-commerce artisanat malgache"
 meta_description: "Site vitrine pour la vente d'artisanat traditionnel malgache : paniers, chapeaux, rafia et corne de zébu."
 ---

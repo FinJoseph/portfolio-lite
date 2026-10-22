@@ -13,7 +13,7 @@ github_url: null
 completed_at: "2025-12"
 status: "completed"
 is_featured: true
-order: 3
+order: 6
 meta_title: "iKomandy B2B - Plateforme e-commerce en gros"
 meta_description: "Plateforme B2B complète de vente en gros avec administration Filament et SPA Vue.js."
 ---

@@ -213,7 +213,38 @@
         "stat_experiences": "Expériences",
         "stat_education": "Diplômes"
     },
+    "projects": {
+        "eyebrow": "// Portfolio",
+        "title": "Mes projets",
+        "subtitle": "Une sélection de projets web, applications et expérimentations.",
+        "search_placeholder": "Rechercher un projet...",
+        "categories": {
+            "all": "Tous",
+            "web": "Web"
+        },
+        "technologies": {
+            "all": "Toutes"
+        },
+        "status": {
+            "completed": "Terminé",
+            "in-progress": "En cours",
+            "draft": "Brouillon"
+        },
+        "back": "Retour aux projets",
+        "visit_site": "Voir le site",
+        "view_code": "Voir le code",
+        "gallery": "Galerie",
+        "related": "Projets similaires",
+        "empty_filters": "Aucun projet ne correspond à ces filtres.",
+        "no_projects": "Aucun projet publié pour le moment.",
+        "coming_soon": "Cette page est en cours de construction.",
+        "meta": {
+            "title": "Projets — Portfolio",
+            "description": "Découvrez mes projets : applications Laravel, plateformes Next.js, e-commerce et outils sur mesure."
+        }
+    },
     "skills": {
+        "back": "Retour aux compétences",
         "eyebrow": "// Mes compétences",
         "title": "Compétences techniques",
         "subtitle": "Les technologies et outils que j'utilise au quotidien pour construire des applications web robustes.",
@@ -224,7 +255,8 @@
             "devops": "DevOps & Outils",
             "design": "Design & UI",
             "database": "Base de données",
-            "other": "Autres"
+            "other": "Autres",
+            "soft_skills": "Soft skills"
         },
         "level": {
             "label": "Niveau",

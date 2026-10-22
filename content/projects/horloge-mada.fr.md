@@ -12,7 +12,7 @@ github_url: "https://github.com/FinJoseph/horloge-mada"
 completed_at: "2026-08"
 status: "completed"
 is_featured: true
-order: 6
+order: 7
 meta_title: "Horloge Mada - Horloge intelligente call center"
 meta_description: "Horloge du call center avec heure officielle de Madagascar, progression de journée, pause, paie et chat en direct."
 ---

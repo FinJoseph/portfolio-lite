@@ -12,7 +12,7 @@ github_url: "https://github.com/FinJoseph/horloge-mada"
 completed_at: "2026-08"
 status: "completed"
 is_featured: true
-order: 6
+order: 7
 meta_title: "Horloge Mada - Famantaranandro manan-tsaina ho an'ny call center"
 meta_description: "Famantaranandro call center miaraka amin'ny ora ofisialy eto Madagasikara, fivoaran'ny andro, fiatoana ary chat mivantana."
 ---

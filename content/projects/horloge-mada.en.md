@@ -12,7 +12,7 @@ github_url: "https://github.com/FinJoseph/horloge-mada"
 completed_at: "2026-08"
 status: "completed"
 is_featured: true
-order: 6
+order: 7
 meta_title: "Horloge Mada - Smart call-center clock"
 meta_description: "Call-center clock with official Madagascar time, day progress, lunch, payday countdown and live chat."
 ---

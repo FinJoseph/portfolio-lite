@@ -213,7 +213,38 @@
         "stat_experiences": "Traikefa",
         "stat_education": "Diploma"
     },
+    "projects": {
+        "eyebrow": "// Portfolio",
+        "title": "Ny asako",
+        "subtitle": "Safidy ny tetikasa web, fampiharana ary fanandramana.",
+        "search_placeholder": "Karohy ny tetikasa...",
+        "categories": {
+            "all": "Rehetra",
+            "web": "Web"
+        },
+        "technologies": {
+            "all": "Rehetra"
+        },
+        "status": {
+            "completed": "Vita",
+            "in-progress": "Manomboka",
+            "draft": "Somialo"
+        },
+        "back": "Hiverina amin'ny tetikasa",
+        "visit_site": "Jereo ny tranon-kasa",
+        "view_code": "Jereo ny kaody",
+        "gallery": "Sary",
+        "related": "Tetikasa mitovy",
+        "empty_filters": "Tsy misy tetikasa mety amin'ireo sivana.",
+        "no_projects": "Tsy mbola misy tetikasa navoakany.",
+        "coming_soon": "Io pejy io dia mbola being tanteraka.",
+        "meta": {
+            "title": "Tetikasa — Portfolio",
+            "description": "Fantaro ny asako: fampiharana Laravel, sehatra Next.js, e-commerce ary fitaovana manokana."
+        }
+    },
     "skills": {
+        "back": "Hiverina amin'ny fahaizana",
         "eyebrow": "// Fahaiza-manako",
         "title": "Fahaiza-manao teknika",
         "subtitle": "Ny fitaovana sy zava-mirohy ampiasainako isaky ny andro hamorona rindrambaiko matanjaka.",
@@ -224,7 +255,8 @@
             "devops": "DevOps & Zava-mirohy",
             "design": "Design & UI",
             "database": "Baziny data",
-            "other": "Hafa"
+            "other": "Hafa",
+            "soft_skills": "Soft skills"
         },
         "level": {
             "label": "Antony",

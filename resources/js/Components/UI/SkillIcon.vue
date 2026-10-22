@@ -194,6 +194,181 @@ function is(...candidates) {
         <path d="M9 15a3 3 0 013 3v3a3 3 0 11-3-3 3 3 0 010-3z" fill="currentColor" opacity="0.4"/>
     </svg>
 
+    <!-- Next.js -->
+    <svg
+        v-else-if="is('next.js', 'nextjs')"
+        :class="size"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+    >
+        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.7"/>
+        <path d="M8.6 16.4v-8.8l6.8 8.8V7.6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    <!-- Vercel -->
+    <svg
+        v-else-if="is('vercel')"
+        :class="size"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+    >
+        <path d="M12 3.5l9.2 17H2.8L12 3.5z"/>
+    </svg>
+
+    <!-- Vite -->
+    <svg
+        v-else-if="is('vite')"
+        :class="size"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+    >
+        <path d="M12 2l10 10-10 10L2 12 12 2z" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+        <path d="M13.6 5.5l-5.2 7.4h3.1l-1.1 5.6 5.2-7.4h-3.1l1.1-5.6z" fill="currentColor"/>
+    </svg>
+
+    <!-- Supabase -->
+    <svg
+        v-else-if="is('supabase')"
+        :class="size"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+    >
+        <path d="M13.4 2L4.2 13.2h5.1L9.8 22l9.2-11.2h-5.1L13.4 2z"/>
+        <path d="M2.5 12.4h19" stroke="currentColor" stroke-width="1.5" opacity="0.45" fill="none"/>
+    </svg>
+
+    <!-- PostgreSQL -->
+    <svg
+        v-else-if="is('postgresql', 'postgres')"
+        :class="size"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+    >
+        <ellipse cx="12" cy="12.4" rx="3.3" ry="4.1"/>
+        <ellipse cx="5.4" cy="9.9" rx="3.1" ry="3.8" opacity="0.55"/>
+        <ellipse cx="18.6" cy="9.9" rx="3.1" ry="3.8" opacity="0.55"/>
+        <path d="M12 16.5c0 2.3-1.1 3.3-2.6 3.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+        <circle cx="10.6" cy="11.4" r="0.85" fill="white" opacity="0.85"/>
+        <circle cx="13.4" cy="11.4" r="0.85" fill="white" opacity="0.85"/>
+    </svg>
+
+    <!-- Prisma -->
+    <svg
+        v-else-if="is('prisma')"
+        :class="size"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+    >
+        <path d="M12 2.6l9.4 16.8H2.6L12 2.6z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+        <path d="M12 2.6v16.8M2.6 19.4h18.8" stroke="currentColor" stroke-width="1.3" opacity="0.5"/>
+    </svg>
+
+    <!-- Drizzle ORM -->
+    <svg
+        v-else-if="is('drizzle', 'drizzleorm')"
+        :class="size"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.9"
+        stroke-linecap="round"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+    >
+        <path d="M7.5 3.5l-2 6"/><path d="M12 3.5l-2 6"/><path d="M16.5 3.5l-2 6"/>
+        <path d="M5.5 12.5l-2 6"/><path d="M10 12.5l-2 6"/><path d="M14.5 12.5l-2 6"/>
+    </svg>
+
+    <!-- Filament -->
+    <svg
+        v-else-if="is('filament')"
+        :class="size"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+    >
+        <path d="M6.5 2.5h12l-2 4.8h-6.2v3.3h5l-1.9 4.6h-3.1v6.3H6.5v-21z"/>
+    </svg>
+
+    <!-- Livewire -->
+    <svg
+        v-else-if="is('livewire')"
+        :class="size"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+    >
+        <rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.2" stroke="currentColor" stroke-width="1.7"/>
+        <path d="M6 13c1.7-3.4 3.2-3.4 4.9 0s3.2 3.4 4.9 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+
+    <!-- Alpine.js -->
+    <svg
+        v-else-if="is('alpine.js', 'alpinejs')"
+        :class="size"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+    >
+        <path d="M1.8 19.5l6.7-11.4 4.1 6.7 2.4-3.8 6.2 8.5H1.8z"/>
+        <circle cx="17.6" cy="6.4" r="2.3" opacity="0.55"/>
+    </svg>
+
+    <!-- Zustand -->
+    <svg
+        v-else-if="is('zustand')"
+        :class="size"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+    >
+        <path d="M12 2.4l8.6 4.8v9.6L12 21.6l-8.6-4.8V7.2L12 2.4z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+        <path d="M3.4 7.2L12 12l8.6-4.8M12 12v9.6" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+    </svg>
+
+    <!-- shadcn/ui -->
+    <svg
+        v-else-if="is('shadcn', 'shadcn/ui')"
+        :class="size"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+    >
+        <circle cx="12" cy="12" r="9.2" stroke="currentColor" stroke-width="1.7"/>
+        <path d="M12 2.8a9.2 9.2 0 000 18.4z" fill="currentColor"/>
+    </svg>
+
+    <!-- i18n -->
+    <svg
+        v-else-if="is('i18n', 'internationalization')"
+        :class="size"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+    >
+        <circle cx="12" cy="12" r="9.2" stroke="currentColor" stroke-width="1.7"/>
+        <ellipse cx="12" cy="12" rx="4" ry="9.2" stroke="currentColor" stroke-width="1.4" opacity="0.7"/>
+        <path d="M3.4 9h17.2M3.4 15h17.2" stroke="currentColor" stroke-width="1.4" opacity="0.7"/>
+    </svg>
+
     <!-- Fallback: generic code/terminal icon -->
     <svg
         v-else

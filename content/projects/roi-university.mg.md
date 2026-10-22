@@ -13,7 +13,7 @@ github_url: null
 completed_at: "2026-05"
 status: "completed"
 is_featured: false
-order: 4
+order: 8
 meta_title: "ROI University - Tranokalan'ny oniversite"
 meta_description: "Tranokala fampisehoana static ho an'ny oniversite fitantanana, vita amin'ny HTML/CSS/JS madio."
 ---

@@ -1,9 +1,9 @@
 {
     "site_name": "FIN FANILONANTENAINA Joseph",
     "job_title": {
-        "fr": "Développeur Web Laravel & Designer",
-        "en": "Laravel Web Developer & Designer",
-        "mg": "Mpamorona tranokala Laravel & Designer"
+        "fr": "Développeur Web Full-Stack (Laravel · Next.js) & Designer",
+        "en": "Full-Stack Web Developer (Laravel · Next.js) & Designer",
+        "mg": "Mpamorona tranokala Full-Stack (Laravel · Next.js) & Designer"
     },
     "hero_headline": {
         "fr": "Bonjour, je suis FIN Joseph",
@@ -16,9 +16,9 @@
         "mg": "Mamorona tranokala maoderina aho."
     },
     "hero_description": {
-        "fr": "Développeur passionné basé à Madagascar, spécialisé en Laravel et Vue.js. J'aime transformer des idées en produits web concrets et bien pensés.",
-        "en": "Passionate developer based in Madagascar, specialized in Laravel and Vue.js. I love turning ideas into well-crafted web products.",
-        "mg": "Mpamorona tranokala any Madagasikara, mahay Laravel sy Vue.js."
+        "fr": "Développeur passionné basé à Madagascar, spécialisé en Laravel et Next.js. J'aime transformer des idées en produits web concrets et bien pensés.",
+        "en": "Passionate developer based in Madagascar, specialized in Laravel and Next.js. I love turning ideas into well-crafted web products.",
+        "mg": "Mpamorona tranokala any Madagasikara, mahay Laravel sy Next.js. Tiako ny manova hevitra ho vokatra tranokala mazava sy tsara."
     },
     "hero_cta_primary": {
         "fr": "Voir mes projets",
@@ -36,9 +36,9 @@
         "mg": "Miafara amin'ny asa"
     },
     "bio": {
-        "fr": "Développeur passionné basé à Madagascar, spécialisé en Laravel et Vue.js. J'aime transformer des idées en produits web concrets et bien pensés.",
-        "en": "Passionate developer based in Madagascar, specialized in Laravel and Vue.js. I love turning ideas into well-crafted web products.",
-        "mg": "Mpamorona tranokala any Madagasikara, mahay Laravel sy Vue.js."
+        "fr": "Développeur passionné basé à Madagascar, spécialisé en Laravel et Next.js. J'aime transformer des idées en produits web concrets et bien pensés.",
+        "en": "Passionate developer based in Madagascar, specialized in Laravel and Next.js. I love turning ideas into well-crafted web products.",
+        "mg": "Mpamorona tranokala any Madagasikara, mahay Laravel sy Next.js. Tiako ny manova hevitra ho vokatra tranokala mazava sy tsara."
     },
     "avatar": "/images/settings/avatar.jpg",
     "email": "finjoseph433@gmail.com",
@@ -54,8 +54,8 @@
         "mg": "Portfolioko - Mpamorona tranokala"
     },
     "default_meta_description": {
-        "fr": "Portfolio professionnel présentant mes projets, compétences et services de développement web.",
-        "en": "Professional portfolio showcasing my projects, skills, and web development services.",
-        "mg": "Portfolio manondro ny asa sy fahaiza-manaoko."
+        "fr": "Portfolio professionnel présentant mes projets, compétences et services de développement web — Laravel, Next.js, React, Tailwind CSS.",
+        "en": "Professional portfolio showcasing my projects, skills and web development services — Laravel, Next.js, React, Tailwind CSS.",
+        "mg": "Portfolio manondro ny asa sy fahaiza-manaoko — Laravel, Next.js, React, Tailwind CSS."
     }
 }

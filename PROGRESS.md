@@ -1,6 +1,6 @@
 # 📊 PROGRESS.md — Statut vivant du projet
 
-**Dernière mise à jour : 2026-07-03**
+**Dernière mise à jour : 2026-10-22**
 **Projet :** portfolio-lite (Laravel + Inertia + Vue 3, sans BDD, file-based)
 
 > Ce fichier est LA mémoire principale de l'agent. Le lire en premier à chaque nouvelle session, avant de relire le cahier des charges.
@@ -32,7 +32,21 @@ Tous suivent le même pattern : `Interface` + `DTO` + implémentation (`File*` p
 | Testimonial | JSON (1 fichier, liste) | `content/testimonials.json` | `TestimonialRepositoryInterface` | `JsonTestimonialRepository` | `JsonTestimonialRepositoryTest` (7 tests) | ✅ Enrichi (job_title, submitted_at) |
 | Settings | JSON (1 fichier, objet unique) | `content/settings.json` | `SettingsRepositoryInterface` | `JsonSettingsRepository` | `JsonSettingsRepositoryTest` (6 tests) | ✅ Enrichi (bio, avatar, hero_tagline, meta SEO) |
 
-**Total tests actuels : 46 tests, TOUS PASS** (validé le 2026-07-03 via `php artisan test`, 102 assertions, 3.08s).
+**Total tests actuels : 68 tests** (67 passent ; `FileProjectRepositoryTest` a un échec **pré-existant** — `coverImage` vaut `null` car le dépôt vérifie l'existence du fichier sur disque avant de l'exposer, alors que la fixture de test n'a pas de fichier image. Le `Dockerfile` de Render ne lance pas les tests : aucun impact sur le déploiement.)
+
+### Mise à jour du contenu — v1.3 (2026-10-22) ✅
+
+- ✅ **3 nouveaux projets** en FR/EN/MG : `ikaaly` (order 1, completed), `aim-app-next` (order 2, in-progress), `autocollant-mada` (order 3, completed).
+- ✅ **9 captures d'écran** ajoutées dans `public/images/projects/{ikaaly,aim-app-next,autocollant-mada}/` (covers + galeries).
+- ✅ **`content/skills.json` réécrit** : 32 skills, 7 catégories (`frontend`, `backend`, `database`, `devops`, `design`, `other`, `soft_skills`), niveaux rééquilibrés, `related_skills` cohérents.
+- ✅ **13 icônes techniques ajoutées** dans `resources/js/Components/UI/SkillIcon.vue` (Next.js, Vercel, Vite, Supabase, PostgreSQL, Prisma, Drizzle ORM, Filament, Livewire, Alpine.js, Zustand, shadcn/ui, i18n).
+- ✅ **Section i18n `projects.*` ajoutée** (FR/EN/MG) : la clé `projects` était **complètement absente** des locales — les pages Projets affichaient les clés brutes. Ajout de `projects.status.{completed,in-progress,draft}`, `projects.categories.*`, `projects.meta.*`, etc.
+- ✅ **`skills.back`** ajouté et utilisé dans `Skills/Show.vue` (qui appelait à tort `t('blog.show.back')` → « Retour au blog » sur une page compétences).
+- ✅ **Ordre des projets existants renuméroté** (antilin 4, portfolio 5, ikomandy 6, horloge 7, roi 8, art 9) pour lever les doublons d'`order` (1-3 en double).
+- ✅ **`status: "in_progress"` → `"in-progress"`** sur la fiche Antilin'i Madagasikara (valeur attendue par `statusConfig`).
+- ✅ **`content/settings.json`** : `job_title`, `hero_description`, `bio` et `default_meta_description` mentionnent désormais Laravel **et** Next.js.
+- ✅ Docs mises à jour : `README.md` (tableau des 9 projets + règle des liens internes), `CAHIER_DES_CHARGES_PORTFOLIO_LITE.md` (v1.3, section 4.8), ce fichier.
+- ⚠️ **À faire** : le remote Git contient un PAT GitHub en clair dans l'URL → **rotation recommandée** + passage en remote sans token.
 
 ### Champs finaux par Repository (état définitif de la phase d'enrichissement)
 
@@ -134,6 +148,10 @@ Tous suivent le même pattern : `Interface` + `DTO` + implémentation (`File*` p
 14. **Dropdown de nav en CSS pur (`group-hover`/`group-focus-within` Tailwind), pas de JS/état** — plus simple, accessible au clavier nativement, pas de listener à gérer. Utilisé pour regrouper Compétences/Projets/Témoignages sous "Réalisations" et éviter une nav trop longue.
 15. **`app.js` : ne jamais couper une chaîne de template literal sur plusieurs lignes** — bug rencontré : l'éditeur (auto-wrap) insérait un vrai saut de ligne dans `` `./Pages/${name}.vue` ``, cassant la résolution des composants Inertia (`module is undefined`). Remplacé par une concaténation `"./Pages/" + name + ".vue"` sur une seule ligne, plus robuste face à l'auto-wrap.
 16. **`settings` partagé globalement via `HandleInertiaRequests::share()`** — les composants de layout (Footer, Navbar…) ne reçoivent pas de props de page. Pour y accéder, on injecte `SettingsRepositoryInterface` dans le middleware Inertia et on expose `settings` + `locale` dans `usePage().props`. `SettingsDTO` expose une méthode `toArray()` pour sérialiser proprement vers Inertia.
+17. **`status` des projets : valeurs strictes `completed` / `in-progress` / `draft`** (kebab-case) — `in_progress` (snake_case) est silencieusement ignoré par `statusConfig` et affiche un badge vide. Les libellés viennent de `projects.status.*` (FR/EN/MG).
+18. **Aucune route préfixée par la locale** — les routes sont `/projects/{slug}` (sans `/fr`). La locale est résolue par le middleware `SetLocale` via le cookie `locale` puis l'en-tête `X-Locale`. Conséquence : **les liens internes dans le Markdown doivent être `/projects/{slug}`**, jamais `/fr/projects/{slug}` (404). Le `SetLocale` lit `segment(1)` mais aucune route ne déclare de préfixe.
+19. **`order` des projets = entier unique et croissant** — l'accueil prend les 3 premiers `is_featured`, la page Projets trie par `order`. Deux projets ne doivent jamais partager le même `order`.
+20. **`SkillIcon.vue` normalise le nom** en retirant espaces, `_` et `-` (mais **pas** `.` ni `/`) — d'où les variantes multiples (`alpine.js`/`alpinejs`, `shadcn`/`shadcn/ui`, `drizzle`/`drizzleorm`).
 
 ## 🎯 Prochaine étape recommandée
 

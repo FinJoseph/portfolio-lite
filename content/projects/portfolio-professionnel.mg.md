@@ -13,7 +13,7 @@ github_url: null
 completed_at: "2026-07"
 status: "completed"
 is_featured: true
-order: 2
+order: 5
 meta_title: "Portfolio Professionnel - CMS miaraka amin'ny administrasiona Filament"
 meta_description: "CMS portfolio feno miaraka amin'ny administrasiona Filament, Inertia.js SPA, fanohanana fiteny maro ary SEO."
 ---

@@ -13,7 +13,7 @@ github_url: null
 completed_at: "2025-12"
 status: "completed"
 is_featured: true
-order: 3
+order: 6
 meta_title: "iKomandy B2B - Wholesale e-commerce platform"
 meta_description: "Complete B2B wholesale e-commerce platform with Filament administration and Vue.js SPA."
 ---

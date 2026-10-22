@@ -12,15 +12,17 @@ technologies: ["Laravel", "Filament", "Vue.js", "Tailwind CSS", "MySQL", "Chart.
 site_url: null
 github_url: "https://github.com/FinJoseph/aim-app-v2"
 completed_at: "2025-06"
-status: "in_progress"
+status: "in-progress"
 is_featured: true
-order: 1
+order: 4
 meta_title: "Antilin'i Madagasikara - Scout Management Application"
 meta_description: "Complete member management application for Scouts of Madagascar. Filament admin panel, Vue.js SPA, hierarchical RBAC, blog, payments and events."
 ---
 ## Overview
 
 **Antilin'i Madagasikara** is a comprehensive member management web application for the **Antilin'i Madagasikara (Scouts of Madagascar)** association. It combines a powerful Filament admin panel with a modern Vue.js SPA public website.
+
+> ℹ️ This page covers the **Laravel / Filament / Vue.js version** (v1). The platform was later **rewritten in Next.js 16** — see the "[AIM App (Next.js)](/projects/aim-app-next)" page, deployed on Vercel.
 
 ## Features
 

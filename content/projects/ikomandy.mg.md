@@ -13,7 +13,7 @@ github_url: null
 completed_at: "2025-12"
 status: "completed"
 is_featured: true
-order: 3
+order: 6
 meta_title: "iKomandy B2B - Tranokala e-commerce ambongadiny"
 meta_description: "Tranokala e-commerce B2B feno ho an'ny varotra ambongadiny miaraka amin'ny administrasiona Filament sy Vue.js SPA."
 ---

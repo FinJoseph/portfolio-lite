@@ -13,7 +13,7 @@ github_url: null
 completed_at: "2026-05"
 status: "completed"
 is_featured: false
-order: 4
+order: 8
 meta_title: "ROI University - Site vitrine universitaire"
 meta_description: "Site vitrine statique pour une université de management, réalisé en HTML/CSS/JS pur."
 ---

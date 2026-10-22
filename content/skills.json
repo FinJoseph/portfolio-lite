@@ -1,52 +1,62 @@
 [
     {
-        "name": "Laravel",
-        "icon": "laravel",
-        "level": 85,
-        "category": "backend",
-        "description": "Framework PHP pour construire des applications web robustes, avec Eloquent, Artisan et un écosystème riche.",
-        "related_skills": ["PHP", "MySQL"],
+        "name": "Next.js",
+        "icon": "nextjs",
+        "level": 82,
+        "category": "frontend",
+        "description": "Framework React full-stack : App Router, Server Components, Server Actions, rendu statique et dynamique, Route Handlers et optimisation d'images.",
+        "related_skills": ["React", "TypeScript", "Tailwind CSS", "Vercel"],
         "order": 1,
         "is_active": true
     },
     {
-        "name": "PHP",
-        "icon": "php",
+        "name": "React",
+        "icon": "react",
         "level": 80,
-        "category": "backend",
-        "description": "Langage de script côté serveur, base de Laravel et de nombreux frameworks web.",
-        "related_skills": ["Laravel", "MySQL"],
+        "category": "frontend",
+        "description": "Bibliothèque d'interface : hooks, composition, Suspense, Server Components et écosystème d'outils de test.",
+        "related_skills": ["Next.js", "TypeScript", "Zustand", "shadcn/ui"],
         "order": 2,
-        "is_active": true
-    },
-    {
-        "name": "MySQL",
-        "icon": "mysql",
-        "level": 75,
-        "category": "database",
-        "description": "Base de données relationnelle open-source, largement utilisée avec Laravel.",
-        "related_skills": ["Laravel", "PHP"],
-        "order": 3,
         "is_active": true
     },
     {
         "name": "Vue.js",
         "icon": "vuejs",
-        "level": 75,
+        "level": 78,
         "category": "frontend",
         "description": "Framework JavaScript progressif pour construire des interfaces réactives avec la Composition API.",
-        "related_skills": ["Tailwind CSS", "Inertia.js"],
+        "related_skills": ["Tailwind CSS", "Inertia.js", "Alpine.js", "JavaScript"],
+        "order": 3,
+        "is_active": true
+    },
+    {
+        "name": "TypeScript",
+        "icon": "typescript",
+        "level": 80,
+        "category": "frontend",
+        "description": "Superset typé de JavaScript pour des applications plus robustes et maintenables, en mode strict sur l'ensemble des apps Next.js.",
+        "related_skills": ["JavaScript", "React", "Next.js", "Drizzle ORM"],
         "order": 4,
+        "is_active": true
+    },
+    {
+        "name": "JavaScript",
+        "icon": "javascript",
+        "level": 78,
+        "category": "frontend",
+        "description": "Langage de programmation du web, base de React, Vue.js et de l'écosystème frontend moderne.",
+        "related_skills": ["Vue.js", "TypeScript", "React"],
+        "order": 5,
         "is_active": true
     },
     {
         "name": "Tailwind CSS",
         "icon": "tailwindcss",
-        "level": 80,
+        "level": 85,
         "category": "frontend",
-        "description": "Framework CSS utility-first pour construire des interfaces sur mesure sans quitter le HTML.",
-        "related_skills": ["Vue.js", "Inertia.js"],
-        "order": 5,
+        "description": "Framework CSS utility-first pour construire des interfaces sur mesure sans quitter le HTML, en v4 sur tous les projets récents.",
+        "related_skills": ["Vue.js", "React", "Next.js", "shadcn/ui"],
+        "order": 6,
         "is_active": true
     },
     {
@@ -56,27 +66,147 @@
         "category": "frontend",
         "description": "Le pont entre Laravel et Vue.js, permettant de construire des SPA sans API.",
         "related_skills": ["Laravel", "Vue.js"],
-        "order": 6,
-        "is_active": true
-    },
-    {
-        "name": "JavaScript",
-        "icon": "javascript",
-        "level": 75,
-        "category": "frontend",
-        "description": "Langage de programmation du web, base de Vue.js et de l'écosystème frontend moderne.",
-        "related_skills": ["Vue.js", "TypeScript"],
         "order": 7,
         "is_active": true
     },
     {
-        "name": "TypeScript",
-        "icon": "typescript",
+        "name": "shadcn/ui",
+        "icon": "shadcn",
+        "level": 72,
+        "category": "frontend",
+        "description": "Composants UI accessibles basés sur Radix, copiés dans le projet et stylés avec Tailwind, pour un design system maîtrisé.",
+        "related_skills": ["React", "Tailwind CSS", "Next.js"],
+        "order": 8,
+        "is_active": true
+    },
+    {
+        "name": "Zustand",
+        "icon": "zustand",
         "level": 65,
         "category": "frontend",
-        "description": "Superset typé de JavaScript pour des applications plus robustes et maintenables.",
-        "related_skills": ["JavaScript", "Vue.js"],
-        "order": 8,
+        "description": "Gestion d'état légère pour React, avec panier persistant et middlewares (panier iKAALY, sidebars, préférences).",
+        "related_skills": ["React", "Next.js", "TypeScript"],
+        "order": 9,
+        "is_active": true
+    },
+    {
+        "name": "Alpine.js",
+        "icon": "alpinejs",
+        "level": 70,
+        "category": "frontend",
+        "description": "Syntaxe déclarative légère pour les interactions côté client, notamment au sein de composants Livewire Laravel.",
+        "related_skills": ["Laravel", "Livewire", "Vue.js"],
+        "order": 10,
+        "is_active": true
+    },
+    {
+        "name": "Laravel",
+        "icon": "laravel",
+        "level": 85,
+        "category": "backend",
+        "description": "Framework PHP pour construire des applications web robustes, avec Eloquent, Artisan, queues, événements et un écosystème riche.",
+        "related_skills": ["PHP", "MySQL", "Livewire", "Filament"],
+        "order": 11,
+        "is_active": true
+    },
+    {
+        "name": "PHP",
+        "icon": "php",
+        "level": 80,
+        "category": "backend",
+        "description": "Langage de script côté serveur, base de Laravel et de nombreux frameworks web.",
+        "related_skills": ["Laravel", "MySQL"],
+        "order": 12,
+        "is_active": true
+    },
+    {
+        "name": "Filament",
+        "icon": "filament",
+        "level": 80,
+        "category": "backend",
+        "description": "Panneau d'administration Laravel (CRUD, formulaires, widgets, RBAC) utilisé sur AIM v1 et iKomandy B2B.",
+        "related_skills": ["Laravel", "Livewire", "Tailwind CSS"],
+        "order": 13,
+        "is_active": true
+    },
+    {
+        "name": "Livewire",
+        "icon": "livewire",
+        "level": 75,
+        "category": "backend",
+        "description": "Composants serveur dynamiques pour Laravel : état, validation et rendu sans écriture de JavaScript.",
+        "related_skills": ["Laravel", "Alpine.js", "Filament"],
+        "order": 14,
+        "is_active": true
+    },
+    {
+        "name": "Supabase",
+        "icon": "supabase",
+        "level": 72,
+        "category": "backend",
+        "description": "Backend-as-a-Service sur PostgreSQL : Auth, Storage, Realtime et Row Level Security — socle de données de iKAALY.",
+        "related_skills": ["PostgreSQL", "Next.js", "Drizzle ORM"],
+        "order": 15,
+        "is_active": true
+    },
+    {
+        "name": "MySQL",
+        "icon": "mysql",
+        "level": 75,
+        "category": "database",
+        "description": "Base de données relationnelle open-source, largement utilisée avec Laravel.",
+        "related_skills": ["Laravel", "PHP", "PostgreSQL"],
+        "order": 16,
+        "is_active": true
+    },
+    {
+        "name": "PostgreSQL",
+        "icon": "postgresql",
+        "level": 78,
+        "category": "database",
+        "description": "Base relationnelle standard, utilisée via Supabase et Neon pour les applications Next.js à l'échelle (AIM App).",
+        "related_skills": ["Supabase", "Drizzle ORM", "MySQL"],
+        "order": 17,
+        "is_active": true
+    },
+    {
+        "name": "Prisma",
+        "icon": "prisma",
+        "level": 72,
+        "category": "database",
+        "description": "ORM TypeScript à schéma déclaratif, migrations versionnées et client généré (SQLite local, Turso en production).",
+        "related_skills": ["TypeScript", "PostgreSQL", "Next.js"],
+        "order": 18,
+        "is_active": true
+    },
+    {
+        "name": "Drizzle ORM",
+        "icon": "drizzle",
+        "level": 70,
+        "category": "database",
+        "description": "ORM TypeScript léger et SQL-first, avec types inférés du schéma — utilisé sur AIM App Next avec PostgreSQL/Neon.",
+        "related_skills": ["TypeScript", "PostgreSQL", "Next.js"],
+        "order": 19,
+        "is_active": true
+    },
+    {
+        "name": "Vercel",
+        "icon": "vercel",
+        "level": 80,
+        "category": "devops",
+        "description": "Plateforme de déploiement serverless : builds Next.js, previews par branche, Edge Network et analytics intégrés.",
+        "related_skills": ["Next.js", "Git", "Docker"],
+        "order": 20,
+        "is_active": true
+    },
+    {
+        "name": "Vite",
+        "icon": "vite",
+        "level": 78,
+        "category": "devops",
+        "description": "Bundler frontend ESM rapide avec HMR natif, utilisé avec Laravel et les applications React/Next.js.",
+        "related_skills": ["Laravel", "React", "TypeScript"],
+        "order": 21,
         "is_active": true
     },
     {
@@ -85,8 +215,8 @@
         "level": 80,
         "category": "devops",
         "description": "Système de contrôle de version distribué, indispensable pour le travail collaboratif.",
-        "related_skills": ["Docker", "GitHub Actions"],
-        "order": 9,
+        "related_skills": ["Docker", "GitHub Actions", "Vercel"],
+        "order": 22,
         "is_active": true
     },
     {
@@ -96,7 +226,7 @@
         "category": "devops",
         "description": "Plateforme de conteneurisation pour des environnements de développement et déploiement cohérents.",
         "related_skills": ["Git", "GitHub Actions"],
-        "order": 10,
+        "order": 23,
         "is_active": true
     },
     {
@@ -106,7 +236,17 @@
         "category": "devops",
         "description": "CI/CD natif GitHub pour automatiser tests, builds et déploiements.",
         "related_skills": ["Git", "Docker"],
-        "order": 11,
+        "order": 24,
+        "is_active": true
+    },
+    {
+        "name": "i18n",
+        "icon": "i18n",
+        "level": 75,
+        "category": "other",
+        "description": "Internationalisation FR / EN / MG : next-intl côté Next.js, middleware Laravel et fichiers de traduction versionnés.",
+        "related_skills": ["Next.js", "Laravel", "Vue.js"],
+        "order": 25,
         "is_active": true
     },
     {
@@ -115,8 +255,8 @@
         "level": 99,
         "category": "design",
         "description": "Outil de design collaboratif pour créer des interfaces et prototypes.",
-        "related_skills": ["Tailwind CSS"],
-        "order": 12,
+        "related_skills": ["Tailwind CSS", "shadcn/ui"],
+        "order": 26,
         "is_active": true
     },
     {
@@ -126,7 +266,7 @@
         "category": "design",
         "description": "Suite Adobe pour la création graphique, retouche photo et design d'interface.",
         "related_skills": ["Figma", "Tailwind CSS"],
-        "order": 13,
+        "order": 27,
         "is_active": true
     },
     {
@@ -136,7 +276,7 @@
         "category": "soft_skills",
         "description": "Maîtrise avancée de Word, Excel, PowerPoint et LibreOffice pour la gestion documentaire.",
         "related_skills": ["Communication"],
-        "order": 14,
+        "order": 28,
         "is_active": true
     },
     {
@@ -146,7 +286,7 @@
         "category": "soft_skills",
         "description": "Capacité à communiquer clairement, à l'écrit comme à l'oral, en français, anglais et malgache.",
         "related_skills": ["Travail d'équipe"],
-        "order": 15,
+        "order": 29,
         "is_active": true
     },
     {
@@ -156,7 +296,7 @@
         "category": "soft_skills",
         "description": "Collaboration efficace au sein d'une équipe, partage de connaissances et entraide.",
         "related_skills": ["Communication", "Résolution de problèmes"],
-        "order": 16,
+        "order": 30,
         "is_active": true
     },
     {
@@ -166,7 +306,7 @@
         "category": "soft_skills",
         "description": "Capacité à analyser, décomposer et résoudre des problèmes complexes de manière méthodique.",
         "related_skills": ["Adaptabilité", "Travail d'équipe"],
-        "order": 17,
+        "order": 31,
         "is_active": true
     },
     {
@@ -176,7 +316,7 @@
         "category": "soft_skills",
         "description": "Capacité à s'adapter rapidement aux nouvelles technologies, méthodes de travail et environnements.",
         "related_skills": ["Résolution de problèmes", "Communication"],
-        "order": 18,
+        "order": 32,
         "is_active": true
     }
 ]

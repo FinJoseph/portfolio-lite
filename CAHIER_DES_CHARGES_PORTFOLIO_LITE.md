@@ -1,6 +1,6 @@
 # 📄 CAHIER DES CHARGES — PORTFOLIO LARAVEL (VERSION LITE / FILE-BASED)
 
-**Version 1.2 — 2026-07-30** (mise à jour versions dépendances + statut réalisation)
+**Version 1.3 — 2026-10-22** (ajout des projets Next.js, refonte des compétences et des libellés i18n)
 **Projet :** Portfolio professionnel — développeur web full-stack, Madagascar
 **Site en ligne :** [finjoseph.onrender.com](https://finjoseph.onrender.com/)
 **Type :** SPA Laravel + Vue/Inertia, **sans base de données**, 100% hébergeable gratuitement
@@ -97,6 +97,31 @@ Pas de stockage BDD → envoi direct par email via `Mailable` + Form Request pou
 ### 4.7 Témoignages
 Fichiers JSON pré-approuvés (affichage uniquement). Une soumission via formulaire peut envoyer un email à l'admin pour ajout manuel au fichier — pas de modération live.
 
+### 4.8 Contenu portfolio — projets & compétences (v1.3)
+
+Le portfolio met en avant **9 projets** et **32 compétences**, entièrement gérés par fichiers.
+
+| Projet | Statut | Stack | Source |
+|---|---|---|---|
+| iKAALY (order 1) | `completed` | Next.js, React, TypeScript, Tailwind CSS, Supabase, PostgreSQL, Zustand, i18n | [ikaaly.vercel.app](https://ikaaly.vercel.app) |
+| AIM App (Next.js) (order 2) | `in-progress` | Next.js, React, TypeScript, Tailwind CSS, Drizzle ORM, PostgreSQL, shadcn/ui, i18n | [antilinimadagascar.vercel.app](https://antilinimadagascar.vercel.app) |
+| Autocollant Mada (order 3) | `completed` | Next.js, React, TypeScript, Tailwind CSS, Prisma, i18n | [autocollantmada.vercel.app](https://autocollantmada.vercel.app) |
+| Antilin'i Madagasikara (order 4) | `in-progress` | Laravel, Filament, Vue.js, Tailwind CSS | version v1 Laravel/Filament |
+| Portfolio professionnel (order 5) | `completed` | Laravel, Filament, Vue.js, Inertia.js | ce site |
+| Ikomandy (order 6) | `completed` | Laravel, Filament, Vue.js | — |
+| Horloge Mada (order 7) | `completed` | Laravel, Filament, Vue.js | — |
+| ROI University (order 8) | `completed` | Laravel, Filament, Vue.js | — |
+| Art Malagasy (order 9) | `completed` | Laravel, Filament, Vue.js | — |
+
+Règles de cohérence du contenu :
+
+- `order` est **unique et croissant** (1 → 9) : l'accueil affiche les 3 premiers projets `is_featured`, la page Projets respecte l'ordre.
+- `status` utilise exactement les valeurs `completed` / `in-progress` / `draft` attendues par `statusConfig` (`resources/js/Pages/Projects/Index.vue` et `Show.vue`) et traduites via `projects.status.*`.
+- Les liens internes entre fiches utilisent `/projects/{slug}` **sans préfixe de locale** : les routes ne sont pas préfixées, la locale est résolue par le cookie `locale` et l'en-tête `X-Locale` (middleware `SetLocale`).
+- La fiche « Antilin'i Madagasikara » documente la version **Laravel/Filament/Vue.js** et renvoie vers la fiche « AIM App (Next.js) » qui documente la réécriture.
+
+Catégories de compétences (32 entrées, `content/skills.json`) : `frontend`, `backend`, `database`, `devops`, `design`, `other`, `soft_skills`. Les entrées non techniques (design, soft skills) utilisent des niveaux plus hauts (90-99) et les stack techniques des niveaux réalistes (50-85).
+
 ---
 
 ## 5. Fonctionnalités Laravel "avancées" mises en valeur
@@ -155,7 +180,7 @@ Ajouts optionnels visant à renforcer le profil technique du portfolio (CV, appr
 
 | # | Fonctionnalité | Détail | Statut |
 |---|---|---|---|
-| O1 | **Tests Pest** | Tests sur repositories + routes + commandes | ✅ FAIT (46+ tests) |
+| O1 | **Tests Pest** | Tests sur repositories + routes + commandes | ✅ FAIT (68 tests) |
 | O2 | **CI/CD GitHub Actions** | Pipeline lint → tests → build → déploiement | 🔜 À faire |
 | O3 | **Logging structuré** | Canal JSON pour événements clés | 🔜 À faire |
 | O4 | **Health check endpoint** | `/up` étendu avec vérifications | ✅ FAIT |
@@ -185,4 +210,4 @@ La majorité des fonctionnalités ont déjà été implémentées :
 
 ---
 
-*Cahier des charges LITE — v1.2 (2026-07-30). Complète, ne remplace pas les fichiers PROGRESS.md / SKILLS_AGENTS.md existants, à adapter en conséquence.*
+*Cahier des charges LITE — v1.3 (2026-10-22). Complète, ne remplace pas les fichiers PROGRESS.md / SKILLS_AGENTS.md existants, à adapter en conséquence.*

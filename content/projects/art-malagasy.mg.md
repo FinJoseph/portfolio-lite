@@ -9,7 +9,7 @@ github_url: "https://github.com/FinJoseph/art-malagasy"
 completed_at: "2024-09"
 status: "completed"
 is_featured: false
-order: 5
+order: 9
 meta_title: "Art Malagasy - Tranokala fivarotana asa tanana"
 meta_description: "Tranokala fampisehoana ho an'ny asa tanana malagasy: harona, satroka, rafia ary tandroky ny omby."
 ---

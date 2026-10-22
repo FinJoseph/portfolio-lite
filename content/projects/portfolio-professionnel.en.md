@@ -13,7 +13,7 @@ github_url: null
 completed_at: "2026-07"
 status: "completed"
 is_featured: true
-order: 2
+order: 5
 meta_title: "Professional Portfolio - CMS with Filament administration"
 meta_description: "Complete portfolio CMS with Filament admin panel, Inertia.js SPA, multilingual support and built-in SEO."
 ---

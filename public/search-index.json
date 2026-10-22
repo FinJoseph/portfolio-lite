@@ -1,6 +1,30 @@
 [
     {
         "type": "project",
+        "title": "iKAALY",
+        "slug": "ikaaly",
+        "excerpt": "Marketplace de commande locale à Manakara : restaurants, clients et administration dans un même écosystème. PWA installable, paiement mobile money et suivi de commande.",
+        "url": "\/projects\/ikaaly",
+        "locale": "fr"
+    },
+    {
+        "type": "project",
+        "title": "AIM App (Next.js)",
+        "slug": "aim-app-next",
+        "excerpt": "Version Next.js de la plateforme de gestion de l'association AIM — Antilin'I Madagascar (Scouts de Madagascar). Site vitrine trilingue, espace membre, back-office hiérarchique et RBAC en base.",
+        "url": "\/projects\/aim-app-next",
+        "locale": "fr"
+    },
+    {
+        "type": "project",
+        "title": "Autocollant Mada",
+        "slug": "autocollant-mada",
+        "excerpt": "Plateforme e-commerce de personnalisation de boîtiers PC à Madagascar : catalogue de designs premium en vinyle, configurateur de design, paiement Mobile Money, chatbot multilingue et back-office complet.",
+        "url": "\/projects\/autocollant-mada",
+        "locale": "fr"
+    },
+    {
+        "type": "project",
         "title": "Antilin'i Madagasikara",
         "slug": "antilin-i-madagasikara",
         "excerpt": "Application de gestion des membres pour l'association scout Antilin'i Madagasikara (Scouts de Madagascar). Plateforme web et mobile responsive avec administration Filament et site public Vue.js.",
@@ -21,6 +45,14 @@
         "slug": "ikomandy",
         "excerpt": "Plateforme e-commerce B2B connectant grossistes et acheteurs. Administration Filament, frontend Vue.js, RBAC multi-rôles avec isolation des données par tenant.",
         "url": "\/projects\/ikomandy",
+        "locale": "fr"
+    },
+    {
+        "type": "project",
+        "title": "Horloge Mada",
+        "slug": "horloge-mada",
+        "excerpt": "Horloge intelligente du call center avec heure officielle de Madagascar, progression de journée, pause déjeuner, compte à rebours de paie, chat en direct et mascotte chat en 3D.",
+        "url": "\/projects\/horloge-mada",
         "locale": "fr"
     },
     {
@@ -145,6 +177,30 @@
     },
     {
         "type": "project",
+        "title": "iKAALY",
+        "slug": "ikaaly",
+        "excerpt": "Local food-ordering marketplace in Manakara: restaurants, customers and administration in one ecosystem. Installable PWA, mobile-money payments and live order tracking.",
+        "url": "\/projects\/ikaaly",
+        "locale": "en"
+    },
+    {
+        "type": "project",
+        "title": "AIM App (Next.js)",
+        "slug": "aim-app-next",
+        "excerpt": "Next.js version of the AIM — Antilin'I Madagascar (Scouts de Madagascar) management platform. Trilingual public site, member area, hierarchical back-office and database-level RBAC.",
+        "url": "\/projects\/aim-app-next",
+        "locale": "en"
+    },
+    {
+        "type": "project",
+        "title": "Autocollant Mada",
+        "slug": "autocollant-mada",
+        "excerpt": "E-commerce platform for custom PC case stickers in Madagascar: premium vinyl design catalogue, live configurator, Mobile Money payments, multilingual chatbot and a full back-office.",
+        "url": "\/projects\/autocollant-mada",
+        "locale": "en"
+    },
+    {
+        "type": "project",
         "title": "Antilin'i Madagasikara",
         "slug": "antilin-i-madagasikara",
         "excerpt": "Member management application for the Antilin'i Madagasikara scout association (Scouts of Madagascar). Web and mobile responsive platform with Filament admin and Vue.js public site.",
@@ -165,6 +221,14 @@
         "slug": "ikomandy",
         "excerpt": "B2B e-commerce platform connecting wholesalers and buyers. Filament administration, Vue.js frontend, multi-role RBAC with per-tenant data isolation.",
         "url": "\/projects\/ikomandy",
+        "locale": "en"
+    },
+    {
+        "type": "project",
+        "title": "Horloge Mada",
+        "slug": "horloge-mada",
+        "excerpt": "Smart call-center clock with official Madagascar time, day progress, lunch break, payday countdown, live chat and a 3D cat mascot.",
+        "url": "\/projects\/horloge-mada",
         "locale": "en"
     },
     {
@@ -289,6 +353,30 @@
     },
     {
         "type": "project",
+        "title": "iKAALY",
+        "slug": "ikaaly",
+        "excerpt": "Marketplace fanontana amin'ny toerana Manakara : trano fandraisan'ny sakafo, mpanjifa ary fitantanana amin'ny ekosistema iray. PWA azo apetraka, fandoavana mobile money ary fanaraha-maso ny baiko.",
+        "url": "\/projects\/ikaaly",
+        "locale": "mg"
+    },
+    {
+        "type": "project",
+        "title": "AIM App (Next.js)",
+        "slug": "aim-app-next",
+        "excerpt": "Ny dikan'ny Next.js amin'ny sehatra fitantanana ny association AIM — Antilin'I Madagascar (Skoto eto Madagasikara). Trifiteny mivantana, toeran'ny mpikambana, back-office araka ny ambaratonga ary RBAC ao amin'ny base.",
+        "url": "\/projects\/aim-app-next",
+        "locale": "mg"
+    },
+    {
+        "type": "project",
+        "title": "Autocollant Mada",
+        "slug": "autocollant-mada",
+        "excerpt": "Sehatra e-commerce amin'ny fan personalization ny boaty PC eto Madagasikara : katalaogy design premium vinyle, configurateur an'araka ny fotoana, fandoavana Mobile Money, chatbot trifiteny ary bokin'ny fitantanana feno.",
+        "url": "\/projects\/autocollant-mada",
+        "locale": "mg"
+    },
+    {
+        "type": "project",
         "title": "Antilin'i Madagasikara",
         "slug": "antilin-i-madagasikara",
         "excerpt": "Fampiharana fitantanana mpikambana ho an'ny fikambanana skoto Antilin'i Madagasikara. Tranokala web sy mobile responsive miaraka amin'ny administrasiona Filament sy tranokala publik Vue.js.",
@@ -309,6 +397,14 @@
         "slug": "ikomandy",
         "excerpt": "Tranokala e-commerce B2B mampifandray ny mpivarotra ambongadiny sy ny mpividy. Administrasiona Filament, frontend Vue.js, RBAC miaraka amin'ny fanavahana data isaky ny mpampiasa.",
         "url": "\/projects\/ikomandy",
+        "locale": "mg"
+    },
+    {
+        "type": "project",
+        "title": "Horloge Mada",
+        "slug": "horloge-mada",
+        "excerpt": "Famantaranandro manan-tsaina ho an'ny call center miaraka amin'ny ora ofisialy eto Madagasikara, fivoaran'ny andro, fiatoana sakafo, fanisana andro aloa ary chat mivantana misy saka 3D.",
+        "url": "\/projects\/horloge-mada",
         "locale": "mg"
     },
     {
@@ -433,26 +529,18 @@
     },
     {
         "type": "skill",
-        "title": "Laravel",
-        "slug": "laravel",
-        "excerpt": "Framework PHP pour construire des applications web robustes, avec Eloquent, Artisan et un écosystème riche.",
-        "url": "\/skills\/laravel",
+        "title": "Next.js",
+        "slug": "nextjs",
+        "excerpt": "Framework React full-stack : App Router, Server Components, Server Actions, rendu statique et dynamique, Route Handlers et optimisation d'images.",
+        "url": "\/skills\/nextjs",
         "locale": "all"
     },
     {
         "type": "skill",
-        "title": "PHP",
-        "slug": "php",
-        "excerpt": "Langage de script côté serveur, base de Laravel et de nombreux frameworks web.",
-        "url": "\/skills\/php",
-        "locale": "all"
-    },
-    {
-        "type": "skill",
-        "title": "MySQL",
-        "slug": "mysql",
-        "excerpt": "Base de données relationnelle open-source, largement utilisée avec Laravel.",
-        "url": "\/skills\/mysql",
+        "title": "React",
+        "slug": "react",
+        "excerpt": "Bibliothèque d'interface : hooks, composition, Suspense, Server Components et écosystème d'outils de test.",
+        "url": "\/skills\/react",
         "locale": "all"
     },
     {
@@ -465,9 +553,25 @@
     },
     {
         "type": "skill",
+        "title": "TypeScript",
+        "slug": "typescript",
+        "excerpt": "Superset typé de JavaScript pour des applications plus robustes et maintenables, en mode strict sur l'ensemble des apps Next.js.",
+        "url": "\/skills\/typescript",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "JavaScript",
+        "slug": "javascript",
+        "excerpt": "Langage de programmation du web, base de React, Vue.js et de l'écosystème frontend moderne.",
+        "url": "\/skills\/javascript",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
         "title": "Tailwind CSS",
         "slug": "tailwind-css",
-        "excerpt": "Framework CSS utility-first pour construire des interfaces sur mesure sans quitter le HTML.",
+        "excerpt": "Framework CSS utility-first pour construire des interfaces sur mesure sans quitter le HTML, en v4 sur tous les projets récents.",
         "url": "\/skills\/tailwind-css",
         "locale": "all"
     },
@@ -481,18 +585,114 @@
     },
     {
         "type": "skill",
-        "title": "JavaScript",
-        "slug": "javascript",
-        "excerpt": "Langage de programmation du web, base de Vue.js et de l'écosystème frontend moderne.",
-        "url": "\/skills\/javascript",
+        "title": "shadcn\/ui",
+        "slug": "shadcnui",
+        "excerpt": "Composants UI accessibles basés sur Radix, copiés dans le projet et stylés avec Tailwind, pour un design system maîtrisé.",
+        "url": "\/skills\/shadcnui",
         "locale": "all"
     },
     {
         "type": "skill",
-        "title": "TypeScript",
-        "slug": "typescript",
-        "excerpt": "Superset typé de JavaScript pour des applications plus robustes et maintenables.",
-        "url": "\/skills\/typescript",
+        "title": "Zustand",
+        "slug": "zustand",
+        "excerpt": "Gestion d'état légère pour React, avec panier persistant et middlewares (panier iKAALY, sidebars, préférences).",
+        "url": "\/skills\/zustand",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Alpine.js",
+        "slug": "alpinejs",
+        "excerpt": "Syntaxe déclarative légère pour les interactions côté client, notamment au sein de composants Livewire Laravel.",
+        "url": "\/skills\/alpinejs",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Laravel",
+        "slug": "laravel",
+        "excerpt": "Framework PHP pour construire des applications web robustes, avec Eloquent, Artisan, queues, événements et un écosystème riche.",
+        "url": "\/skills\/laravel",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "PHP",
+        "slug": "php",
+        "excerpt": "Langage de script côté serveur, base de Laravel et de nombreux frameworks web.",
+        "url": "\/skills\/php",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Filament",
+        "slug": "filament",
+        "excerpt": "Panneau d'administration Laravel (CRUD, formulaires, widgets, RBAC) utilisé sur AIM v1 et iKomandy B2B.",
+        "url": "\/skills\/filament",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Livewire",
+        "slug": "livewire",
+        "excerpt": "Composants serveur dynamiques pour Laravel : état, validation et rendu sans écriture de JavaScript.",
+        "url": "\/skills\/livewire",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Supabase",
+        "slug": "supabase",
+        "excerpt": "Backend-as-a-Service sur PostgreSQL : Auth, Storage, Realtime et Row Level Security — socle de données de iKAALY.",
+        "url": "\/skills\/supabase",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "MySQL",
+        "slug": "mysql",
+        "excerpt": "Base de données relationnelle open-source, largement utilisée avec Laravel.",
+        "url": "\/skills\/mysql",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "PostgreSQL",
+        "slug": "postgresql",
+        "excerpt": "Base relationnelle standard, utilisée via Supabase et Neon pour les applications Next.js à l'échelle (AIM App).",
+        "url": "\/skills\/postgresql",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Prisma",
+        "slug": "prisma",
+        "excerpt": "ORM TypeScript à schéma déclaratif, migrations versionnées et client généré (SQLite local, Turso en production).",
+        "url": "\/skills\/prisma",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Drizzle ORM",
+        "slug": "drizzle-orm",
+        "excerpt": "ORM TypeScript léger et SQL-first, avec types inférés du schéma — utilisé sur AIM App Next avec PostgreSQL\/Neon.",
+        "url": "\/skills\/drizzle-orm",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Vercel",
+        "slug": "vercel",
+        "excerpt": "Plateforme de déploiement serverless : builds Next.js, previews par branche, Edge Network et analytics intégrés.",
+        "url": "\/skills\/vercel",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "Vite",
+        "slug": "vite",
+        "excerpt": "Bundler frontend ESM rapide avec HMR natif, utilisé avec Laravel et les applications React\/Next.js.",
+        "url": "\/skills\/vite",
         "locale": "all"
     },
     {
@@ -517,6 +717,14 @@
         "slug": "github-actions",
         "excerpt": "CI\/CD natif GitHub pour automatiser tests, builds et déploiements.",
         "url": "\/skills\/github-actions",
+        "locale": "all"
+    },
+    {
+        "type": "skill",
+        "title": "i18n",
+        "slug": "i18n",
+        "excerpt": "Internationalisation FR \/ EN \/ MG : next-intl côté Next.js, middleware Laravel et fichiers de traduction versionnés.",
+        "url": "\/skills\/i18n",
         "locale": "all"
     },
     {

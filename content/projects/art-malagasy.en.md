@@ -9,7 +9,7 @@ github_url: "https://github.com/FinJoseph/art-malagasy"
 completed_at: "2024-09"
 status: "completed"
 is_featured: false
-order: 5
+order: 9
 meta_title: "Art Malagasy - Malagasy crafts e-commerce site"
 meta_description: "Brochure website for traditional Malagasy artisan crafts: baskets, hats, raffia and zebu horn products."
 ---

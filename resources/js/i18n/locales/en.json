@@ -213,7 +213,38 @@
         "stat_experiences": "Experiences",
         "stat_education": "Diplomas"
     },
+    "projects": {
+        "eyebrow": "// Portfolio",
+        "title": "My projects",
+        "subtitle": "A selection of web projects, applications and experiments.",
+        "search_placeholder": "Search a project...",
+        "categories": {
+            "all": "All",
+            "web": "Web"
+        },
+        "technologies": {
+            "all": "All"
+        },
+        "status": {
+            "completed": "Completed",
+            "in-progress": "In progress",
+            "draft": "Draft"
+        },
+        "back": "Back to projects",
+        "visit_site": "Visit site",
+        "view_code": "View code",
+        "gallery": "Gallery",
+        "related": "Similar projects",
+        "empty_filters": "No project matches these filters.",
+        "no_projects": "No project published yet.",
+        "coming_soon": "This page is under construction.",
+        "meta": {
+            "title": "Projects — Portfolio",
+            "description": "Discover my projects: Laravel applications, Next.js platforms, e-commerce and custom tools."
+        }
+    },
     "skills": {
+        "back": "Back to skills",
         "eyebrow": "// My skills",
         "title": "Technical Skills",
         "subtitle": "The technologies and tools I use daily to build robust web applications.",
@@ -224,7 +255,8 @@
             "devops": "DevOps & Tools",
             "design": "Design & UI",
             "database": "Database",
-            "other": "Other"
+            "other": "Other",
+            "soft_skills": "Soft skills"
         },
         "level": {
             "label": "Level",
