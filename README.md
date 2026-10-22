@@ -11,7 +11,7 @@ Portfolio professionnel **sans base de données**, 100% fichier, hébergeable gr
 
 **Auteur :** FIN FANILONANTENAINA Joseph — Développeur Full-Stack (Laravel · Next.js) & Designer (Madagascar)
 **Site en ligne :** [finjoseph.onrender.com](https://finjoseph.onrender.com/)
-**Plan de travail :** [PLAN_AMELIORATIONS.md](PLAN_AMELIORATIONS.md) — feuille de route fonctionnelle, design, perf et SEO (lots 0 → 7)
+**Plan de travail :** [PLAN_AMELIORATIONS.md](PLAN_AMELIORATIONS.md) — feuille de route fonctionnelle, design, perf et SEO (lots 0 → 7) · [PLAN_DESIGN_FLUIDITE.md](PLAN_DESIGN_FLUIDITE.md) — refonte visuelle, motion et sensation de fluidité (lots A → C)
 
 ---
 
