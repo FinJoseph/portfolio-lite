@@ -18,6 +18,9 @@ export default defineConfig({
                     weights: [400], // serif d'affichage : accents éditoriaux (tagline hero, chiffres clés)
                     styles: ["normal", "italic"], // italique inclus : utilisé pour les accents en serif
                 }),
+                bunny("JetBrains Mono", {
+                    weights: [400, 500], // eyebrows, badges, blocs de code (Shiki en S4)
+                }),
             ],
         }),
         tailwindcss(), // plugin officiel Tailwind v4 : scanne le code et génère uniquement le CSS utilisé

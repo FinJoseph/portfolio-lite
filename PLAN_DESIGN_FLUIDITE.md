@@ -483,7 +483,11 @@ Mesure : `npx lighthouse https://finjoseph.onrender.com --preset=desktop --view`
 - ✅ **B4 `v-reveal`** : directive + IO partagé, masquage uniquement sous la ligne de flottaison, stagger `{ delay }`, no-op en `prefers-reduced-motion`. Posée sur home, cartes projets/blog, groupes de compétences.
 - ✅ **B6 barre de progression** : `ScrollProgress.vue` (rAF, `scaleX`, `Teleport`, décorative).
 - ✅ Bouton « retour en haut » du footer réparé (couleur `amber` manquante, cible 44 px, reduced-motion).
-- ⏳ B3 Lenis · B5 micro-interactions · B6 navbar compacte · vérification B2 sur serveur réel.
+- ✅ **B3 — écarté volontairement** (décision utilisateur) : pas de Lenis. On s'appuie sur `scroll-behavior: smooth` natif + `scroll-padding-top`, avec retour à `auto` sous `prefers-reduced-motion`. 0 Ko de dépendance, 0 risque d'accessibilité.
+- ✅ **B5 micro-interactions** : `BaseButton` (lift 1 px au survol, `active:scale-[0.98]`, anneau de focus), `BaseCard` (transition ombre/bordure 300 ms), cartes projets/blog cliquables (lift 4 px au survol, `motion-reduce` neutralisé).
+- ✅ **B6 navbar** : la pilule se compacte au scroll (58 → 54 px, fond 85 % → 95 %, ombre resserrée).
+- ✅ **JetBrains Mono** chargée via Bunny (400/500) : cohérence avec les futurs blocs de code.
+- ⏳ Vérification B2 sur serveur réel (PHP local cassé).
 
 **Décisions prises**
 - `--font-mono` déclaré « JetBrains Mono » mais **non chargé** : soit on l'ajoute à Bunny, soit on assume `ui-monospace`. À trancher en S1.5.
@@ -521,6 +525,7 @@ Mesure : `npx lighthouse https://finjoseph.onrender.com --preset=desktop --view`
 - [ ] Contraste AA validé sur les 10 pages, en clair **et** en sombre
 - [ ] Images : `width`/`height` partout, WebP, `loading`/`fetchpriority` corrects
 - [x] Animations : `transform`/`opacity` uniquement (+ `filter` supprimé des orbes)
+- [x] `scroll-behavior: smooth` natif (Lenis écarté) + repli `prefers-reduced-motion`
 
 ---
 

@@ -128,7 +128,7 @@ function statusLabel(status) {
                     :href="'/projects/' + project.slug"
                     class="group block"
                 >
-                    <BaseCard class="h-full flex flex-col overflow-hidden group-hover:shadow-lg group-hover:border-primary/50 transition-all duration-300">
+                    <BaseCard class="h-full flex flex-col overflow-hidden group-hover:shadow-lg group-hover:border-primary/50 group-hover:-translate-y-1 transition-[box-shadow,border-color,transform] duration-300 ease-out">
                         <div v-if="project.coverImage" class="aspect-video bg-ink-light/10 dark:bg-white/5 overflow-hidden">
                             <img
                                 :src="project.coverImage"

@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { Link, usePage } from '@inertiajs/vue3';
 import { useI18n } from 'vue-i18n';
 import LocaleSwitcher from './LocaleSwitcher.vue';
@@ -13,6 +13,29 @@ const page = usePage();
 const mobileOpen = ref(false);
 
 const current = computed(() => page.component ?? '');
+
+// La pilule se compacte dès qu'on quitte le haut de page (feedback de scroll).
+const scrolled = ref(false);
+
+const onScroll = () => {
+    scrolled.value = window.scrollY > 16;
+};
+
+const navClasses = computed(() => [
+    'pointer-events-auto max-w-5xl mx-auto flex items-center justify-between rounded-full border border-border/60 dark:border-border-dark/60 backdrop-blur-xl px-2 transition-all duration-300',
+    scrolled.value
+        ? 'py-1.5 bg-white/95 dark:bg-ink/95 shadow-xl shadow-black/10 dark:shadow-black/50'
+        : 'py-2 bg-white/85 dark:bg-ink/85 shadow-2xl shadow-black/10 dark:shadow-black/40',
+]);
+
+onMounted(() => {
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+});
+
+onUnmounted(() => {
+    window.removeEventListener('scroll', onScroll);
+});
 const isActiveIn = (names) => names.includes(current.value);
 
 // Pages regroupées sous le dropdown "Réalisations" — définies une seule fois,
@@ -26,7 +49,7 @@ const workLinks = [
 
 <template>
     <div class="fixed top-4 left-0 right-0 z-50 px-4 sm:px-6 pointer-events-none">
-        <nav class="pointer-events-auto max-w-5xl mx-auto flex items-center justify-between rounded-full border border-border/60 dark:border-border-dark/60 bg-white/85 dark:bg-ink/85 backdrop-blur-xl shadow-2xl shadow-black/10 dark:shadow-black/40 px-2 py-2 transition-all duration-300">
+        <nav :class="navClasses">
             <Link href="/" class="pl-1 flex items-center gap-3 group">
                 <LogoAvatar src="/images/settings/avatar.jpg" alt="Logo" fallback="D" />
                 <span class="hidden sm:block font-mono text-sm font-bold text-ink dark:text-white tracking-tight group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-200" />

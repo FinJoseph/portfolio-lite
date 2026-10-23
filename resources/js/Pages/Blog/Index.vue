@@ -217,7 +217,7 @@ const jsonLd = computed(() => ({
                     v-for="(article, index) in paged"
                     :key="article.slug"
                     v-reveal="{ delay: (index % 2) * 80 }"
-                    class="overflow-hidden flex flex-col"
+                    class="overflow-hidden flex flex-col hover:-translate-y-1 transition-transform duration-300 ease-out motion-reduce:transform-none"
                 >
                     <Link :href="`/blog/${article.slug}`" class="flex flex-col h-full">
                         <div

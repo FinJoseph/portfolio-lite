@@ -29,7 +29,10 @@ Référence : `PLAN_DESIGN_FLUIDITE.md` (section « État d'avancée »).
 
 - ✅ **B4 — `v-reveal`** : directive `resources/js/Directives/reveal.js` (IntersectionObserver partagé, amélioration progressive). Ne masque que les éléments **sous la ligne de flottaison** au montage (`top < innerHeight * 0.92` → pas d'animation) ; stagger via `{ delay }` (max 400 ms) ; désactivée si `prefers-reduced-motion`. Appliquée à la home (4 sections), aux cartes projets (`index % 3 * 70 ms`), aux cartes blog (`index % 2 * 80 ms`) et aux groupes de compétences.
 - ✅ **B6 — Feedback de scroll (partiel)** : `ScrollProgress.vue` = barre de lecture 2 px en haut (`scaleX`, rAF, `Teleport` dans `<body>`, `aria-hidden`). Bouton « retour en haut » existant du footer réparé : `bg-amber` désormais défini, cible tactile 44 px, `scrollTo` respecte `prefers-reduced-motion` (le doublon initialement ajouté a été supprimé).
-- ⏳ Reste : B3 (Lenis), B2 vérification end-to-end, B5 micro-interactions, B6 navbar qui se compacte au scroll.
+- ✅ **B3 — sans dépendance (décision utilisateur)** : pas de Lenis ; `html { scroll-behavior: smooth }` + `scroll-padding-top`, remis à `auto` sous `prefers-reduced-motion`.
+- ✅ **B5 — micro-interactions** : BaseButton (lift + `active:scale-[0.98]`), BaseCard (ombre/bordure), cartes projets/blog (lift 4 px), navbar compacte au scroll (58 → 54 px).
+- ✅ **JetBrains Mono** (400/500) chargée via Bunny — `--font-mono` n'est plus un mensonge.
+- ⏳ Reste : vérification B2 end-to-end sur serveur réel (PHP local cassé).
 
 ### Fondation technique (Étapes 1-3)
 - ✅ Projet Laravel 13.18 initialisé avec `composer create-project laravel/laravel`

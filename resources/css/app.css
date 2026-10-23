@@ -154,6 +154,7 @@
     html {
         -webkit-text-size-adjust: 100%;
         scroll-padding-top: 6rem; /* les ancres ne passent plus sous la navbar sticky */
+        scroll-behavior: smooth; /* B3 sans dépendance : inertie native du navigateur */
         /* Évite un flash blanc derrière le contenu au rebond (overscroll iOS). */
         background-color: var(--color-paper);
     }
@@ -282,6 +283,10 @@ body::after {
    Tout mouvement est neutralisé, le contenu reste intégralement visible.
    ═══════════════════════════════════════════════════════════════════ */
 @media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
     *,
     *::before,
     *::after {
