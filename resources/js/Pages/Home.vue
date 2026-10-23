@@ -16,9 +16,9 @@ defineProps({
 <template>
     <AppLayout>
         <HeroSection />
-        <SkillsPreviewSection :skills="skills" />
-        <ProjectsPreviewSection :projects="projects" />
-        <TestimonialsPreviewSection :testimonials="testimonials" />
-        <ContactCtaSection />
+        <SkillsPreviewSection v-reveal :skills="skills" />
+        <ProjectsPreviewSection v-reveal :projects="projects" />
+        <TestimonialsPreviewSection v-reveal :testimonials="testimonials" />
+        <ContactCtaSection v-reveal />
     </AppLayout>
 </template>

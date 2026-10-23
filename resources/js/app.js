@@ -10,6 +10,8 @@ import { createInertiaApp, router } from "@inertiajs/vue3";
 // elle intercepte la navigation, appelle Laravel en arrière-plan, et affiche le bon composant Vue sans recharger la page
 import { i18n } from "./i18n";
 // ↑ AJOUT : notre instance vue-i18n configurée dans resources/js/i18n/index.js
+import reveal from "./Directives/reveal";
+// ↑ directive v-reveal : révélation douce au scroll (IntersectionObserver partagé)
 import PageSkeleton from "@/Components/UI/PageSkeleton.vue";
 // ↑ squelette affiché pendant le chargement d'un chunk de page (évite le flash blanc)
 
@@ -57,6 +59,8 @@ createInertiaApp({
         // active le plugin Inertia sur cette instance
 
         app.use(i18n);
+
+        app.directive("reveal", reveal);
         // ↑ AJOUT : active vue-i18n, rend $t / useI18n() disponibles dans tous les composants
 
         // ↑ AJOUT : si le backend a partagé la locale active (via HandleInertiaRequests),

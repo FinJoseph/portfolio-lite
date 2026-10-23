@@ -32,7 +32,9 @@ const handleScroll = () => {
     showBackToTop.value = window.scrollY > 600;
 };
 const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
 };
 
 onMounted(() => {
@@ -376,7 +378,7 @@ const hasContact = computed(() => Boolean(settings.email || settings.phone));
                 type="button"
                 @click="scrollToTop"
                 :aria-label="t('footer.back_to_top')"
-                class="fixed bottom-6 right-6 z-50 inline-flex items-center justify-center w-10 h-10 rounded-full bg-amber/90 text-white shadow-sm shadow-amber/15 hover:shadow-md hover:shadow-amber/25 focus:outline-none focus-visible:ring-1 focus-visible:ring-amber focus-visible:ring-offset-1 transition-all duration-300 group"
+                class="fixed bottom-6 right-6 z-50 inline-flex items-center justify-center w-11 h-11 rounded-full bg-amber/90 text-white shadow-sm shadow-amber/15 hover:shadow-md hover:shadow-amber/25 focus:outline-none focus-visible:ring-1 focus-visible:ring-amber focus-visible:ring-offset-1 transition-all duration-300 group"
             >
                 <svg
                     class="w-5 h-5 transition-transform duration-300 group-hover:-translate-y-0.5"

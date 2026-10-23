@@ -122,8 +122,9 @@ function statusLabel(status) {
             <!-- Projects Grid -->
             <div v-if="filteredProjects.length" class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <Link
-                    v-for="project in filteredProjects"
+                    v-for="(project, index) in filteredProjects"
                     :key="project.slug"
+                    v-reveal="{ delay: (index % 3) * 70 }"
                     :href="'/projects/' + project.slug"
                     class="group block"
                 >

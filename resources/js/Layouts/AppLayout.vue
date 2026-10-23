@@ -2,6 +2,7 @@
 import Navbar from '@/Components/Layout/Navbar.vue';
 import Footer from '@/Components/Layout/Footer.vue';
 import CyberGrid from '@/Components/Layout/CyberGrid.vue';
+import ScrollProgress from '@/Components/UI/ScrollProgress.vue';
 </script>
 
 <template>
@@ -16,5 +17,8 @@ import CyberGrid from '@/Components/Layout/CyberGrid.vue';
             <slot />
         </main>
         <Footer />
+
+        <!-- Barre de progression de lecture (teleportée dans <body>) -->
+        <ScrollProgress />
     </div>
 </template>

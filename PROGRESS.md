@@ -25,6 +25,12 @@ Référence : `PLAN_DESIGN_FLUIDITE.md` (section « État d'avancée »).
 
 > Blocage environnemental : PHP CLI local cassé (ABI mismatch `iconv` & co, pas de `sudo`/`docker`) → `php artisan serve` inutilisable. Validation via build Vite + harnais statique dans `/tmp/opencode/harness`.
 
+### Sprint 2 — Mouvement (en cours, 2026-10-23)
+
+- ✅ **B4 — `v-reveal`** : directive `resources/js/Directives/reveal.js` (IntersectionObserver partagé, amélioration progressive). Ne masque que les éléments **sous la ligne de flottaison** au montage (`top < innerHeight * 0.92` → pas d'animation) ; stagger via `{ delay }` (max 400 ms) ; désactivée si `prefers-reduced-motion`. Appliquée à la home (4 sections), aux cartes projets (`index % 3 * 70 ms`), aux cartes blog (`index % 2 * 80 ms`) et aux groupes de compétences.
+- ✅ **B6 — Feedback de scroll (partiel)** : `ScrollProgress.vue` = barre de lecture 2 px en haut (`scaleX`, rAF, `Teleport` dans `<body>`, `aria-hidden`). Bouton « retour en haut » existant du footer réparé : `bg-amber` désormais défini, cible tactile 44 px, `scrollTo` respecte `prefers-reduced-motion` (le doublon initialement ajouté a été supprimé).
+- ⏳ Reste : B3 (Lenis), B2 vérification end-to-end, B5 micro-interactions, B6 navbar qui se compacte au scroll.
+
 ### Fondation technique (Étapes 1-3)
 - ✅ Projet Laravel 13.18 initialisé avec `composer create-project laravel/laravel`
 - ✅ Inertia.js + Vue 3 + Tailwind CSS 4 configurés (`vite.config.js`, `resources/js/app.js`, `resources/css/app.css`)

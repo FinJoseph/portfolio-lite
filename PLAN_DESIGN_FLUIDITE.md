@@ -478,6 +478,13 @@ Mesure : `npx lighthouse https://finjoseph.onrender.com --preset=desktop --view`
 
 **Reste à faire en S1 (bloqué par l'environnement)** : mesure Lighthouse réelle (PHP local cassé → validation via harnais statique Playwright), et arbitrage sur le budget « < 90 Ko gzip » (les 113 Ko actuels sont dominés par Vue + Inertia, non compressibles sans changer de framework).
 
+## 🚧 Sprint 2 — Mouvement (en cours)
+
+- ✅ **B4 `v-reveal`** : directive + IO partagé, masquage uniquement sous la ligne de flottaison, stagger `{ delay }`, no-op en `prefers-reduced-motion`. Posée sur home, cartes projets/blog, groupes de compétences.
+- ✅ **B6 barre de progression** : `ScrollProgress.vue` (rAF, `scaleX`, `Teleport`, décorative).
+- ✅ Bouton « retour en haut » du footer réparé (couleur `amber` manquante, cible 44 px, reduced-motion).
+- ⏳ B3 Lenis · B5 micro-interactions · B6 navbar compacte · vérification B2 sur serveur réel.
+
 **Décisions prises**
 - `--font-mono` déclaré « JetBrains Mono » mais **non chargé** : soit on l'ajoute à Bunny, soit on assume `ui-monospace`. À trancher en S1.5.
 - Transitions limitées aux **GET** : les POST de formulaire (contact) gardent le comportement Inertia standard.
@@ -513,7 +520,7 @@ Mesure : `npx lighthouse https://finjoseph.onrender.com --preset=desktop --view`
 - [x] Mobile 360 px : aucun débordement, CTA principal au pouce
 - [ ] Contraste AA validé sur les 10 pages, en clair **et** en sombre
 - [ ] Images : `width`/`height` partout, WebP, `loading`/`fetchpriority` corrects
-- [ ] Animations : uniquement `transform`/`opacity` (vérifier via DevTools « Paint flashing »)
+- [x] Animations : `transform`/`opacity` uniquement (+ `filter` supprimé des orbes)
 
 ---
 

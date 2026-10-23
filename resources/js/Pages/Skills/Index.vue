@@ -144,7 +144,7 @@ watch(() => activeCategory.value, () => {
 
             <!-- Skills Grid -->
             <div class="mt-10" v-if="Object.keys(groupedFilteredSkills).length > 0">
-                <div v-for="(skills, category) in groupedFilteredSkills" :key="category">
+                <div v-for="(skills, category) in groupedFilteredSkills" :key="category" v-reveal>
                     <h3 class="text-lg sm:text-xl font-semibold text-ink dark:text-white mb-4 flex items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-primary" aria-hidden="true"></span>
                         {{ categoryLabel(category) }}

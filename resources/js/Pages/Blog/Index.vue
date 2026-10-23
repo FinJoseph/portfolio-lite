@@ -214,8 +214,9 @@ const jsonLd = computed(() => ({
             <!-- Articles grid -->
             <div v-if="paged.length" class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
                 <BaseCard
-                    v-for="article in paged"
+                    v-for="(article, index) in paged"
                     :key="article.slug"
+                    v-reveal="{ delay: (index % 2) * 80 }"
                     class="overflow-hidden flex flex-col"
                 >
                     <Link :href="`/blog/${article.slug}`" class="flex flex-col h-full">
