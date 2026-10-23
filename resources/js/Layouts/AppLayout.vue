@@ -12,7 +12,7 @@ import CyberGrid from '@/Components/Layout/CyberGrid.vue';
         <CyberGrid />
 
         <Navbar />
-        <main class="relative flex-1 pt-28">
+        <main id="main-content" class="relative flex-1 pt-28">
             <slot />
         </main>
         <Footer />

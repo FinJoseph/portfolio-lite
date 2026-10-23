@@ -39,6 +39,10 @@
 </head>
 
 <body>
+    {{-- Lien d'évitement : permet aux lecteurs d'écran et à la navigation clavier
+         de sauter directement au contenu principal (accessibilité WCAG 2.4.1). --}}
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
     {{-- @inertia : génère la div racine (<div id="app" data-page="...">) où Vue va se monter
          data-page contient les données JSON initiales (nom du composant + props) --}}
     @inertia

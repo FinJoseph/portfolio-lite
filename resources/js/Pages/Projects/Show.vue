@@ -111,7 +111,7 @@ function statusLabel(status) {
                     </span>
                 </div>
 
-                <h1 class="text-3xl sm:text-4xl font-bold text-ink dark:text-white">
+                <h1 class="text-h1 font-bold text-ink dark:text-white">
                     {{ project.title }}
                 </h1>
 

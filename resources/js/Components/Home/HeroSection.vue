@@ -58,7 +58,6 @@ function staggerClass(index) {
                         class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 dark:bg-primary/15 border border-primary/20 text-primary text-xs sm:text-sm font-mono font-medium"
                     >
                         <span class="relative flex h-1.5 w-1.5">
-                            <span class="absolute inline-flex h-full w-full rounded-full bg-primary opacity-75 animate-ping"></span>
                             <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-primary"></span>
                         </span>
                         {{ availabilityBadge }}
@@ -67,16 +66,16 @@ function staggerClass(index) {
 
                 <!-- Headline -->
                 <h1
-                    class="mt-5 text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-ink dark:text-white transition-all duration-700 ease-out"
+                    class="mt-5 text-display font-bold text-ink dark:text-white transition-all duration-700 ease-out"
                     :class="[mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4', 'delay-[200ms]']"
                 >
                     {{ headline }}
                 </h1>
 
-                <!-- Tagline -->
+                <!-- Tagline — accent éditorial en serif italique -->
                 <p
                     v-if="tagline"
-                    class="mt-4 text-lg sm:text-xl text-primary font-medium transition-all duration-700 ease-out"
+                    class="mt-4 font-display italic text-lead text-primary transition-all duration-700 ease-out"
                     :class="[mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4', 'delay-[300ms]']"
                 >
                     {{ tagline }}
@@ -187,24 +186,27 @@ function staggerClass(index) {
                 >
                     <!-- Rotating ring -->
                     <div
-                        class="absolute inset-0 rounded-full border-2 border-dashed border-primary/30 animate-[spin_20s_linear_infinite]"
+                        class="absolute inset-0 rounded-full border-2 border-dashed border-primary/30 animate-spin-slow"
                         aria-hidden="true"
                     ></div>
                     <!-- Gradient blob -->
                     <div
-                        class="absolute -inset-4 rounded-full bg-gradient-to-br from-primary/25 via-primary-light/15 to-transparent blur-2xl animate-[pulse_4s_ease-in-out_infinite]"
+                        class="absolute -inset-4 rounded-full bg-gradient-to-br from-primary/25 via-primary-light/15 to-transparent blur-2xl"
                         aria-hidden="true"
                     ></div>
                     <!-- Floating avatar -->
                     <div
-                        class="relative w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-primary-light/20 border-2 border-primary/30 shadow-2xl shadow-primary/20 animate-[float_4s_ease-in-out_infinite]"
+                        class="relative w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-primary/20 to-primary-light/20 border-2 border-primary/30 shadow-2xl shadow-primary/20 animate-float-slow"
                     >
                         <img
                             v-if="avatar"
                             :src="avatar"
                             :alt="siteName"
                             class="w-full h-full object-cover"
+                            width="320"
+                            height="320"
                             loading="eager"
+                            fetchpriority="high"
                         />
                         <div
                             v-else
@@ -232,19 +234,7 @@ function staggerClass(index) {
             :class="mounted ? 'opacity-100' : 'opacity-0'"
         >
             <span class="text-[10px] font-mono uppercase tracking-widest">{{ t('home.hero.scroll') }}</span>
-            <span class="w-px h-6 bg-gradient-to-b from-primary to-transparent animate-[float_2s_ease-in-out_infinite]"></span>
+            <span class="w-px h-6 bg-gradient-to-b from-primary to-transparent animate-float-slow"></span>
         </div>
     </section>
 </template>
-
-<style scoped>
-@keyframes float {
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-12px);
-    }
-}
-</style>

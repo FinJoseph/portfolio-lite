@@ -132,6 +132,7 @@ const jsonLd = computed(() => ({
                 :eyebrow="t('blog.eyebrow', '// Blog')"
                 :title="t('blog.title', 'Blog')"
                 :align="'center'"
+                as="h1"
             />
             <p
                 v-if="t('blog.subtitle')"

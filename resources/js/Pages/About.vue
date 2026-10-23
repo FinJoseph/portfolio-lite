@@ -126,13 +126,13 @@ function locVal(obj) {
             <!-- Animated mesh background -->
             <div class="absolute inset-0 -z-10" aria-hidden="true">
                 <div
-                    class="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-primary/20 via-primary-light/10 to-transparent blur-[120px] animate-[meshMove_8s_ease-in-out_infinite]"
+                    class="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.22),rgba(52,211,153,0.10)_45%,transparent_70%)] animate-[meshMove_8s_ease-in-out_infinite]"
                 ></div>
                 <div
-                    class="absolute -bottom-40 -left-40 w-[400px] h-[400px] rounded-full bg-gradient-to-tr from-violet-500/15 via-primary/10 to-transparent blur-[100px] animate-[meshMove_10s_ease-in-out_infinite_reverse]"
+                    class="absolute -bottom-40 -left-40 w-[400px] h-[400px] rounded-full bg-[radial-gradient(circle_at_center,rgba(139,92,246,0.16),rgba(16,185,129,0.08)_45%,transparent_70%)] animate-[meshMove_10s_ease-in-out_infinite_reverse]"
                 ></div>
                 <div
-                    class="absolute top-1/2 left-1/3 w-[300px] h-[300px] rounded-full bg-gradient-to-r from-cyan-400/10 to-blue-500/10 blur-[80px] animate-[meshMove_12s_ease-in-out_infinite]"
+                    class="absolute top-1/2 left-1/3 w-[300px] h-[300px] rounded-full bg-[radial-gradient(circle_at_center,rgba(34,211,238,0.12),rgba(59,130,246,0.08)_50%,transparent_72%)] animate-[meshMove_12s_ease-in-out_infinite]"
                 ></div>
             </div>
 
@@ -143,7 +143,7 @@ function locVal(obj) {
                         <div class="relative w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56">
                             <!-- Rotating gradient ring -->
                             <svg
-                                class="absolute -inset-2 w-[calc(100%+16px)] h-[calc(100%+16px)] animate-[spin_6s_linear_infinite]"
+                                class="absolute -inset-2 w-[calc(100%+16px)] h-[calc(100%+16px)] animate-spin-slow"
                                 viewBox="0 0 100 100"
                                 fill="none"
                             >
@@ -157,7 +157,7 @@ function locVal(obj) {
                                 <circle cx="50" cy="50" r="46" stroke="url(#ringGrad)" stroke-width="2" stroke-dasharray="80 120" stroke-linecap="round" />
                             </svg>
                             <!-- Glow -->
-                            <div class="absolute -inset-6 rounded-full bg-primary/10 blur-3xl animate-[pulse_4s_ease-in-out_infinite]"></div>
+                            <div class="absolute -inset-6 rounded-full bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.22),transparent_70%)]"></div>
                             <!-- Image -->
                             <div class="relative w-full h-full rounded-3xl overflow-hidden border-2 border-white/20 dark:border-white/10 shadow-2xl shadow-primary/20">
                                 <img
@@ -191,7 +191,7 @@ function locVal(obj) {
                     <!-- Text -->
                     <div class="flex-1 text-center lg:text-left">
                         <h1
-                            class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-ink dark:text-white leading-tight"
+                            class="text-display font-bold text-ink dark:text-white"
                         >
                             {{ siteName }}
                         </h1>

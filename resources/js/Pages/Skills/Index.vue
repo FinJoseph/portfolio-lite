@@ -102,6 +102,7 @@ watch(() => activeCategory.value, () => {
                 :eyebrow="t('skills.eyebrow')"
                 :title="t('skills.title')"
                 align="center"
+                as="h1"
             />
             <p class="mt-6 text-ink-light dark:text-white/70 max-w-2xl mx-auto text-center">
                 {{ t('skills.subtitle') }}

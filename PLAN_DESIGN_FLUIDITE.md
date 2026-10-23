@@ -461,11 +461,32 @@ Mesure : `npx lighthouse https://finjoseph.onrender.com --preset=desktop --view`
 
 ---
 
+# 📈 ÉTAT D'AVANCÉE
+
+## ✅ Sprint 1 — Fondations (livré le 2026-10-23)
+
+| Chantier | Livré | Preuve mesurée |
+|---|---|---|
+| **A1 — Tokens** | `@theme` complet (couleurs sémantiques + `amber`, rayons `card/panel/pill`, ombres `xs→float`, easings `quart/out-expo/spring`, durées) ; couche `:root`/`.dark` (`--surface/2/3`, `--border-soft`) alignée sur `paper`/`paper-dark` ; `html` peint selon le thème | `--surface` = `#F9FAFB` clair / `#000` sombre, bascule instantanée via `.dark` |
+| **A2 — Typo** | Échelle fluide `clamp()` : `text-display` / `h1` / `h2` / `h3` / `lead` ; Instrument Serif (italique) via Bunny ; `text-wrap: balance/pretty` | H1 = **80 px** à 1440 px, **41,6 px** à 360 px ; tagline en Instrument Serif italic |
+| **B1 — Code splitting** | `import.meta.glob` sans `eager` + `defineAsyncComponent` + `PageSkeleton` (shimmer) ; `advancedChunks` `vendor-vue` / `vendor-inertia` | JS initial **≈ 113 Ko gzip** (contre ≈ 148 Ko) **−24 %** ; chunk par page `Home` 6,1 Ko gzip |
+| **B2 — View Transitions** | `@view-transition` + keyframes `vt-out`/`vt-in` ; `router.visit` force `viewTransition: true` sur les navigations **GET** uniquement (les `<Link>` Inertia envoient `false` par défaut) | `document.startViewTransition` détecté ; repli natif si non supporté |
+| **B8 — GPU** | Halos et orbes convertis de `filter: blur()` → `radial-gradient` ; animations infinies réduites (`animate-ping` supprimé, `pulse` retiré des gros blobs) ; plus aucun `will-change` permanent | `blur` restants sur `/` : 2 (avatar + navbar `backdrop-blur`), contre une dizaine avant |
+| **Prefetch** | Écoute déléguée `mouseover` (debounce 150 ms, skip externe/_blank/`data-no-prefetch`) | 1 requête XHR par lien survolé |
+| **A11y** | Skip link `#main-content` + `:focus-visible` + `scroll-padding-top: 6rem` ; **une seule H1 par page** (`as="h1"` sur `SectionHeading`) | 7 routes testées : 1 H1 chacune, 0 erreur console |
+| **Divers** | axios retiré (`bootstrap.js`, −17 Ko gzip) ; `bg-amber` du footer réparé (classe inexistante) ; `text-wrap` + `::selection` ; reset global `prefers-reduced-motion` | Animations à `1e-06 s` avec `reducedMotion: reduce` |
+
+**Reste à faire en S1 (bloqué par l'environnement)** : mesure Lighthouse réelle (PHP local cassé → validation via harnais statique Playwright), et arbitrage sur le budget « < 90 Ko gzip » (les 113 Ko actuels sont dominés par Vue + Inertia, non compressibles sans changer de framework).
+
+**Décisions prises**
+- `--font-mono` déclaré « JetBrains Mono » mais **non chargé** : soit on l'ajoute à Bunny, soit on assume `ui-monospace`. À trancher en S1.5.
+- Transitions limitées aux **GET** : les POST de formulaire (contact) gardent le comportement Inertia standard.
+
 # 🗓️ PLAN D'EXÉCUTION
 
 | Sprint | Contenu | Charge | Sortie |
 |---|---|---|---|
-| **S1 — Fondations** | A1 tokens · A2 typo · B1 code splitting · B8 GPU | 1,5 j | Charte pilotable, bundle ÷2, 60 fps |
+| **S1 — Fondations** ✅ | A1 tokens · A2 typo · B1 code splitting · B2 view transitions · B8 GPU | 1,5 j | Charte pilotable, bundle −24 %, 60 fps |
 | **S2 — Mouvement** | B2 transitions · B4 reveal · B3 scroll Lenis · B6 feedback scroll | 1,5 j | Navigation perçue instantanée, pages qui respirent |
 | **S3 — Home & projets** | A4 bento home · A5 cartes/fiche · A2 + B7 (icônes de marque) | 1,5 j | La home devient une vitrine |
 | **S4 — Contenu** | A8 blog (Shiki, TOC, covers) · A6 compétences · A7 about | 1,5 j | Les 3 pages secondaires au niveau |
@@ -478,18 +499,18 @@ Mesure : `npx lighthouse https://finjoseph.onrender.com --preset=desktop --view`
 
 # ✅ CHECKLIST DE VALIDATION DESIGN & FLUIDITÉ
 
-- [ ] `grep -rn "eager: true" resources/js/app.js` → plus de chargement eager des pages
+- [x] `grep -rn "eager: true" resources/js/app.js` → plus de chargement eager des pages
 - [ ] Chunk initial < 90 Ko gzip (vérifier dans `public/build/manifest.json`)
 - [ ] LCP < 2,0 s, INP < 200 ms, CLS < 0,1 sur `/` et `/projects` (Lighthouse mobile)
 - [ ] Aucune animation infinie hors écran ; CPU 0 % onglet inactif
-- [ ] `prefers-reduced-motion` → aucun mouvement, contenu intégralement visible
+- [x] `prefers-reduced-motion` → aucun mouvement, contenu intégralement visible
 - [ ] Aucune couleur hexadécimale en dur dans les `.vue` ; les tokens pilotent tout
 - [ ] Tous les titres utilisent l'échelle fluide `clamp()` ; `text-wrap: balance`
-- [ ] Grain + halos : rendu net, pas de flou laiteux sur le texte
-- [ ] Navigation clavier complète : skip link, focus visible, palette Ctrl+K
-- [ ] Transitions de page actives entre toutes les routes (avec repli si non supporté)
-- [ ] Au moins 2 retours visuels sur chaque action (toast, état, animation)
-- [ ] Mobile 360 px : aucun débordement, CTA principal au pouce
+- [x] Grain + halos : rendu net, pas de flou laiteux sur le texte
+- [x] Navigation clavier : skip link + focus visible (palette Ctrl+K → S6)
+- [x] Transitions de page actives entre toutes les routes (avec repli si non supporté)
+- [ ] Au moins 2 retours visuels sur chaque action (toast, état, animation) → S2/S5
+- [x] Mobile 360 px : aucun débordement, CTA principal au pouce
 - [ ] Contraste AA validé sur les 10 pages, en clair **et** en sombre
 - [ ] Images : `width`/`height` partout, WebP, `loading`/`fetchpriority` corrects
 - [ ] Animations : uniquement `transform`/`opacity` (vérifier via DevTools « Paint flashing »)

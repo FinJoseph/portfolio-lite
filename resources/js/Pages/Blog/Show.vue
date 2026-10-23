@@ -150,7 +150,7 @@ const jsonLd = computed(() => {
                     </span>
                 </div>
 
-                <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold text-ink dark:text-white leading-tight">
+                <h1 class="mt-4 text-h1 font-bold text-ink dark:text-white">
                     {{ article.title }}
                 </h1>
 

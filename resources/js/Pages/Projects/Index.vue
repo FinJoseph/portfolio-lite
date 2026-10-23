@@ -66,6 +66,7 @@ function statusLabel(status) {
                 :eyebrow="t('projects.eyebrow', 'Portfolio')"
                 :title="t('projects.title', 'Mes projets')"
                 align="center"
+                as="h1"
             />
             <p class="mt-6 text-ink-light dark:text-white/70 max-w-2xl mx-auto text-center">
                 {{ t('projects.subtitle', 'Une sélection de projets web, applications et expérimentations.') }}

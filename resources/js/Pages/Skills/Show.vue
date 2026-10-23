@@ -75,7 +75,7 @@ onMounted(() => {
                         <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-primary/10 dark:bg-primary/20 text-primary dark:text-primary-light mb-3">
                             {{ categoryLabel(skill.category) }}
                         </span>
-                        <h1 class="text-3xl sm:text-4xl font-bold text-ink dark:text-white">{{ skill.name }}</h1>
+                        <h1 class="text-h1 font-bold text-ink dark:text-white">{{ skill.name }}</h1>
                         <div class="mt-4 flex items-center gap-4">
                             <div class="flex-1 sm:w-48">
                                 <div class="flex items-center gap-2 mb-1">

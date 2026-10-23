@@ -203,6 +203,7 @@ function errorFor(field) {
             <SectionHeading
                 :eyebrow="t('contact.eyebrow')"
                 :title="t('contact.heading')"
+                as="h1"
             />
             <p
                 v-if="t('contact.subtitle')"

@@ -5,10 +5,9 @@
  * Composition :
  *  1. Une grille SVG plein écran (cellules 48×48) avec petits points lumineux
  *     aux intersections — donne le côté « circuit board / terminal ».
- *  2. Deux halos verts d'ambiance, positionnés en diagonale, avec une
- *     opacité légèrement plus marquée qu'avant et une animation de
- *     pulsation désynchronisée pour donner de la vie au fond sans
- *     distraire du contenu.
+ *  2. Deux halos verts d'ambiance, positionnés en diagonale, dessinés en
+ *     dégradé radial (et non en blur CSS) et animés par une pulsation
+ *     d'opacité désynchronisée : vivant, mais sans coût GPU continu.
  *
  * Light / Dark :
  *  - Pas de @media (prefers-color-scheme) ni de JS pour détecter le mode :
@@ -18,8 +17,9 @@
  *
  * Perf :
  *  - Aucun canvas, aucune animation JS, aucun listener d'événement.
- *  - Les halos sont de simples divs floutées via CSS filter.
- *  - Les animations utilisent uniquement opacity et transform (GPU-friendly).
+ *  - Aucun `filter: blur()` : les halos sont des dégradés radiaux.
+ *  - Seule l'opacity est animée (composité GPU), pas de will-change permanent.
+ *  - Le mouvement est neutralisé si l'utilisateur demande prefers-reduced-motion.
  */
 </script>
 
@@ -62,53 +62,31 @@
             />
         </svg>
 
-        <!-- Halo d'ambiance vert : haut à droite -->
+        <!-- Halo d'ambiance vert : haut à droite
+             Dégradé radial au lieu d'un filter: blur(100px) :
+             même rendu visuel, mais aucune couche GPU floutée à recomposer. -->
         <div
-            class="halo halo-1 absolute -top-20 -right-20 w-96 h-96 rounded-full bg-primary/[0.12] dark:bg-primary/[0.22] blur-[100px]"
+            class="halo absolute -top-24 -right-24 h-[26rem] w-[26rem] rounded-full bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.20),rgba(16,185,129,0.07)_45%,transparent_70%)] dark:bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.30),rgba(16,185,129,0.10)_45%,transparent_70%)] animate-halo"
             aria-hidden="true"
         ></div>
 
-        <!-- Halo d'ambiance vert : bas à gauche -->
+        <!-- Halo d'ambiance vert : bas à gauche (décalé pour désynchroniser la pulsation) -->
         <div
-            class="halo halo-2 absolute -bottom-20 -left-20 w-96 h-96 rounded-full bg-primary/[0.12] dark:bg-primary/[0.22] blur-[100px]"
+            class="halo absolute -bottom-24 -left-24 h-[26rem] w-[26rem] rounded-full bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.20),rgba(16,185,129,0.07)_45%,transparent_70%)] dark:bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.30),rgba(16,185,129,0.10)_45%,transparent_70%)] animate-halo"
+            style="animation-delay: -7s"
             aria-hidden="true"
         ></div>
     </div>
 </template>
 
 <style scoped>
-@keyframes halo-pulse-1 {
-    0%, 100% {
-        opacity: 0.55;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1.04);
-    }
-}
-
-@keyframes halo-pulse-2 {
-    0%, 100% {
-        opacity: 0.55;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1.06);
-    }
-}
-
+/*
+ * Les halos n'utilisent plus `filter: blur()` ni `will-change` permanent :
+ * le dégradé radial est rasterisé une seule fois, l'animation ne joue que sur
+ * l'opacity (composité GPU, sans repaint). Aucun `will-change` statique → pas de
+ * couche mémoire retenue en permanence.
+ */
 .halo {
-    transform-origin: center;
-    will-change: opacity, transform;
-}
-
-.halo-1 {
-    animation: halo-pulse-1 8s ease-in-out infinite;
-}
-
-.halo-2 {
-    animation: halo-pulse-2 11s ease-in-out infinite;
+    transform: translateZ(0);
 }
 </style>

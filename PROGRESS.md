@@ -1,6 +1,6 @@
 # 📊 PROGRESS.md — Statut vivant du projet
 
-**Dernière mise à jour : 2026-10-22**
+**Dernière mise à jour : 2026-10-23**
 **Projet :** portfolio-lite (Laravel + Inertia + Vue 3, sans BDD, file-based)
 
 > Ce fichier est LA mémoire principale de l'agent. Le lire en premier à chaque nouvelle session, avant de relire le cahier des charges.
@@ -8,6 +8,22 @@
 ---
 
 ## ✅ CE QUI EST FAIT
+
+### Sprint 1 — Fondations design & fluidité (2026-10-23) ✅
+
+Référence : `PLAN_DESIGN_FLUIDITE.md` (section « État d'avancée »).
+
+- ✅ **Tokens** (`app.css`) : couleurs sémantiques, rayons, ombres, easings, durées ; `:root`/`.dark` (`--surface`, `--surface-2`, `--surface-3`, `--border-soft`) mappés via `@theme inline` ; `html` peint selon le thème (fini le flash blanc en overscroll).
+- ✅ **Typographie** : échelle fluide `clamp()` (`text-display`, `text-h1/h2/h3`, `text-lead`) ; Instrument Serif italic chargée via Bunny ; `text-wrap: balance/pretty` ; H1 = 80 px (1440) / 41,6 px (360).
+- ✅ **Code splitting** : `import.meta.glob` sans `eager` + `defineAsyncComponent` + `PageSkeleton.vue` ; `advancedChunks` (`vendor-vue`, `vendor-inertia`). JS initial ≈ **113 Ko gzip** (−24 %).
+- ✅ **View Transitions** : CSS `@view-transition` + `vt-out`/`vt-in`, et `router.visit` force `viewTransition: true` sur les navigations GET (les `<Link>` Inertia envoient `false` par défaut).
+- ✅ **Prefetch** : écouteur délégué `mouseover`, debounce 150 ms, respect de `data-no-prefetch`, skip externe/`_blank`/`download`.
+- ✅ **GPU** : halos/orbes en `radial-gradient` (plus de `filter: blur(100px)`), animations infinies réduites, plus de `will-change` permanent.
+- ✅ **A11y/SEO** : skip link `#main-content`, `:focus-visible`, `scroll-padding-top`, reset global `prefers-reduced-motion`, **une seule H1 par page** (prop `as` sur `SectionHeading`).
+- ✅ **Nettoyage** : axios retiré de `bootstrap.js` (−17 Ko gzip) ; `bg-amber` du footer réparé (classe Tailwind inexistante → point de statut invisible).
+- ✅ **Validation** : harnais statique Playwright sur 7 routes (`/`, `/about`, `/projects`, `/projects/ikaaly`, `/skills`, `/blog`, `/contact`) → 0 erreur console, 0 débordement, thème sombre OK, `prefers-reduced-motion` OK.
+
+> Blocage environnemental : PHP CLI local cassé (ABI mismatch `iconv` & co, pas de `sudo`/`docker`) → `php artisan serve` inutilisable. Validation via build Vite + harnais statique dans `/tmp/opencode/harness`.
 
 ### Fondation technique (Étapes 1-3)
 - ✅ Projet Laravel 13.18 initialisé avec `composer create-project laravel/laravel`
