@@ -18,13 +18,15 @@ onMounted(() => {
     });
 });
 
-function cardClasses(index) {
-    const base = 'transition-all duration-700 ease-out';
-    const state = mounted.value
-        ? 'opacity-100 translate-y-0'
-        : 'opacity-0 translate-y-4';
-    const delay = `delay-[${100 + index * 100}ms]`;
-    return [base, state, delay];
+function cardClasses() {
+    return [
+        'transition-all duration-700 ease-out',
+        mounted.value ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4',
+    ];
+}
+
+function cardStyle(index) {
+    return { transitionDelay: mounted.value ? `${100 + index * 100}ms` : '0ms' };
 }
 
 function headerClasses() {
@@ -55,7 +57,8 @@ function placeholderLetter(title) {
                 v-for="(project, index) in projects.slice(0, 3)"
                 :key="project.slug"
                 :href="`/projects/${project.slug}`"
-                :class="cardClasses(index)"
+                :class="cardClasses()"
+                :style="cardStyle(index)"
                 class="group relative block h-80 rounded-2xl overflow-hidden border border-border dark:border-border-dark hover:border-primary hover:shadow-xl hover:shadow-primary/20 transition-all duration-300"
             >
                 <!-- Background image or placeholder -->

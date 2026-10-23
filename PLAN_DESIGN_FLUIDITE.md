@@ -489,6 +489,13 @@ Mesure : `npx lighthouse https://finjoseph.onrender.com --preset=desktop --view`
 - ✅ **JetBrains Mono** chargée via Bunny (400/500) : cohérence avec les futurs blocs de code.
 - ⏳ Vérification B2 sur serveur réel (PHP local cassé).
 
+## 🚧 Sprint 3 — Home & projets (partiel, 2026-10-23)
+
+- ✅ **Hero mot à mot** : H1 découpé en spans (55 ms d'écart, plafonné à 700 ms), `aria-label` conservé sur le `<h1>` pour le SEO et les lecteurs d'écran.
+- ✅ **Bandeau de stack** : `StackMarquee.vue` (CSS pur, `translate3d` sur 1/6 de la piste, 6 copies pour couvrir le 4K, pause au survol, `animation: none` en `prefers-reduced-motion`, masque en dégradé sur les bords).
+- ✅ **Bug corrigé** : les `delay-[${…}ms]` de `ProjectsPreviewSection` étaient générés à l'exécution → jamais produits par Tailwind ; remplacés par `transitionDelay` inline.
+- ⏳ **Reste (nécessite une validation visuelle humaine)** : grille bento 4 colonnes (A4.1), tuile « dernier article », bandeau preuves chiffrées, section services + tarifs (contenu à arbitrer), refonte des cartes/fiches projet (A5).
+
 **Décisions prises**
 - `--font-mono` déclaré « JetBrains Mono » mais **non chargé** : soit on l'ajoute à Bunny, soit on assume `ui-monospace`. À trancher en S1.5.
 - Transitions limitées aux **GET** : les POST de formulaire (contact) gardent le comportement Inertia standard.

@@ -25,6 +25,16 @@ const availabilityBadge = computed(() => settings.availability_badge || '');
 
 const firstName = computed(() => siteName.value.split(' ')[0]);
 
+// Révélation mot à mot : le H1 reste un seul texte pour le SEO/les lecteurs
+// d'écran (aria-label), chaque mot est animé indépendamment.
+const headlineWords = computed(() =>
+    headline.value.split(/\s+/).filter(Boolean)
+);
+
+const wordStyle = (index) => ({
+    transitionDelay: `${200 + Math.min(index * 55, 700)}ms`,
+});
+
 const mounted = ref(false);
 onMounted(() => {
     requestAnimationFrame(() => {
@@ -64,12 +74,19 @@ function staggerClass(index) {
                     </span>
                 </div>
 
-                <!-- Headline -->
+                <!-- Headline : cascade mot à mot -->
                 <h1
-                    class="mt-5 text-display font-bold text-ink dark:text-white transition-all duration-700 ease-out"
-                    :class="[mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4', 'delay-[200ms]']"
+                    :aria-label="headline"
+                    class="mt-5 text-display font-bold text-ink dark:text-white"
                 >
-                    {{ headline }}
+                    <span
+                        v-for="(word, index) in headlineWords"
+                        :key="index"
+                        aria-hidden="true"
+                        class="mr-[0.26em] inline-block last:mr-0 transition-[opacity,transform] duration-700 ease-out"
+                        :class="mounted ? 'translate-y-0 opacity-100' : 'translate-y-3 opacity-0'"
+                        :style="wordStyle(index)"
+                    >{{ word }}</span>
                 </h1>
 
                 <!-- Tagline — accent éditorial en serif italique -->

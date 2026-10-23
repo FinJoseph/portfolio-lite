@@ -34,6 +34,13 @@ Référence : `PLAN_DESIGN_FLUIDITE.md` (section « État d'avancée »).
 - ✅ **JetBrains Mono** (400/500) chargée via Bunny — `--font-mono` n'est plus un mensonge.
 - ⏳ Reste : vérification B2 end-to-end sur serveur réel (PHP local cassé).
 
+### Sprint 3 — Home (partiel, 2026-10-23)
+
+- ✅ Hero : révélation mot à mot du H1 (`aria-label` conservé, 55 ms entre les mots).
+- ✅ `StackMarquee.vue` : bandeau de stack en CSS pur (6 technos, boucle sur 1/6 de piste, pause au survol, off en reduced-motion).
+- ✅ Fix : délais d'apparition des cartes projets (classes Tailwind dynamiques → `transitionDelay` inline).
+- ⏳ Bento, tuile dernier article, preuves chiffrées, services/tarifs, refonte fiches projet : en attente d'une revue visuelle.
+
 ### Fondation technique (Étapes 1-3)
 - ✅ Projet Laravel 13.18 initialisé avec `composer create-project laravel/laravel`
 - ✅ Inertia.js + Vue 3 + Tailwind CSS 4 configurés (`vite.config.js`, `resources/js/app.js`, `resources/css/app.css`)

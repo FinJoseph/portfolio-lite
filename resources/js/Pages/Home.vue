@@ -1,6 +1,7 @@
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
 import HeroSection from '@/Components/Home/HeroSection.vue';
+import StackMarquee from '@/Components/Home/StackMarquee.vue';
 import SkillsPreviewSection from '@/Components/Home/SkillsPreviewSection.vue';
 import ProjectsPreviewSection from '@/Components/Home/ProjectsPreviewSection.vue';
 import TestimonialsPreviewSection from '@/Components/Home/TestimonialsPreviewSection.vue';
@@ -16,6 +17,7 @@ defineProps({
 <template>
     <AppLayout>
         <HeroSection />
+        <StackMarquee :skills="skills" />
         <SkillsPreviewSection v-reveal :skills="skills" />
         <ProjectsPreviewSection v-reveal :projects="projects" />
         <TestimonialsPreviewSection v-reveal :testimonials="testimonials" />
